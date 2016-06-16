@@ -1,0 +1,73 @@
+<!--<h1> {{vm.proj.name}}</h1>-->
+
+<!--<div class="mySwiper">
+
+    <div><img ng-src="img/proj/{{vm.proj.id}}/{{vm.curentImg}}"></div>
+
+</div>
+
+<div class="swiperNavCon">
+    <div class="swiperNav">
+        <div ng-click="vm.swipe(1)" class="arrow"><</div>
+        <div class="blank">&nbsp;</div>
+        <div ng-click="vm.swipe(-1)" class="arrow">></div>
+    </div>
+</div>-->
+<!--<div class="projBack">
+    <div class="carousel-wrapper">
+        <ui-carousel active="active" no-wrap="true">
+        <ui-slide ng-repeat="slide in vm.slides track by slide.id" index="slide.id">
+            <img ng-src="img/proj/{{slide.image}}" style="margin:auto;">
+            <!--<div class="carousel-caption">
+                <h4>Slide {{slide.id}}</h4>
+                <p>{{slide.text}}</p>
+            </div>
+        </ui-slide>
+    </ui-carousel>
+    </div>
+</div>-->
+<div class="swiper">
+    <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0" pagination-clickable="true">
+    <ks-swiper-slide class="swiper-slide" ng-repeat="img in vm.projimgs">
+    <img ng-src="img/proj/{{vm.proj.id}}/{{img}}">
+
+    </ks-swiper-slide>
+    </ks-swiper-container>
+</div>
+
+<section class="projectsPage2">
+    <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in vm.projs"
+       ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
+        <div class="projectName">{{proj.name}}</div>
+    </a>
+
+    <div class="projectName">{{proj.name}}</div>
+</section>
+<!--<img src="img/proj/101/101-1.jpg">-->
+
+
+<!--<div class="projectThumbs">-->
+
+<!--<div ng-repeat="img in vm.projimgs"     >-->
+
+
+<!--</div>-->
+
+<!--</div>-->
+
+
+<!--<div class="projectThumbs">-->
+
+
+<!--<a ng-repeat="proj in vm.projs" ng-href="#!/project/{{proj.id}}"  class="projectThumb" ng-style="{'background-image':'url(img/proj/'+proj.id+'.jpg)'}" >-->
+
+<!--<div class="projectName">{{proj.name}}</div>-->
+<!--</a>-->
+
+<!--</div>-->
+
+
+
+
+
+

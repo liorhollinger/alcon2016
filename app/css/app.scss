@@ -1,0 +1,39 @@
+
+body {
+  direction: rtl;
+  //min-height: 400px;
+  //margin-bottom: 100px;
+  //clear: both;
+  display: flex;
+  //min-height: 100vh;
+  flex-direction: column;
+  //justify-content: space-between;
+  //background-color: #0000FF;
+  margin: 0;
+  overflow-x: hidden;
+  //padding-left: 2px;
+  a {
+    text-decoration: none;
+  }
+}
+.main{
+  //min-height: 100vh;
+//width: 80%;
+  //min-height: 400px;
+  //margin-bottom: 200px;
+  //clear: both;
+}
+//
+//section {
+//  padding: 10px 30px;
+//}
+
+@media (max-width: 1000px){
+  .main{
+    //min-height: 100vh;
+    //margin-bottom: 200px;
+
+    //margin-bottom: 400px;
+  }
+}
+

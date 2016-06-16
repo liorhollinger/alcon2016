@@ -1,0 +1,63 @@
+footer {
+  display: flex;
+  flex-flow: row;
+  //position: absolute;
+  padding-top: 2.5vw;
+  padding-bottom: 1vw;
+
+
+  background-color: #51585E;
+  color: white;
+  > div {
+
+    padding-right: 3vw;
+    padding-left: 3vw;
+    &.desc {
+      border-left:1px solid white;
+      min-width: 200px;
+      font-size: 1.5em;
+      font-family: NextExit;
+    }
+
+  }
+  .companyName {
+    font-size: 4em;
+    font-family: Aduma;
+    line-height: 90%;
+    padding-right: 5vw;
+
+  }
+  .address {
+    min-width: 300px;
+    font-size: 1.5em;
+    font-family: NextExit;
+  }
+
+}
+@media (max-width: 1000px) {
+  footer {
+    flex-wrap: wrap;
+    > div {
+      width:100%;
+      padding-bottom: 5vw;
+      padding-top: 5vw;
+      padding-right: 4vw;
+      padding-left: 6vw;
+
+      &.companyName {
+        text-align: center;
+        border-bottom:1px solid white;
+      }
+      &.desc {
+        border-left:none;
+        border-bottom:1px solid white;
+
+      }
+      &.address {
+        text-align: center;
+        border-left:none;
+      }
+
+    }
+  }
+}

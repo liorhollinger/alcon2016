@@ -1,0 +1,25 @@
+//Aduma
+@font-face {
+  font-family: Aduma;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Aduma-Light.woff") format("woff"),
+  url("../fonts/Aduma-Light.woff2") format("woff2");
+}
+//Aduma-Bold
+@font-face {
+  font-family: Aduma;
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/Aduma-Bold.woff") format("woff"),
+      url("../fonts/Aduma-Bold.woff2") format("woff2");
+}
+
+//Next-Exit
+@font-face {
+  font-family: NextExit;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/NextExit-Light.woff") format("woff"),
+      url("../fonts/Aduma-Light.woff2") format("woff2");
+}

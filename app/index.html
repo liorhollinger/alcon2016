@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="he" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="he" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="he" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="he" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Alcon</title>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
+    <!--<script src="example.js"></script>-->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="bower_components/swiper/dist/css/swiper.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+
+</head>
+<body>
+
+<div class="navConBoot">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=#!/home">"><img src="img/home/logo3.JPG" style="width: 73px; left:0; top:0; position: absolute "/></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                <ul class="nav navbar-nav">
+                    <!--<li><a href="#!/home">דף הבית</a></li>-->
+                    <li><a href="#!/about">אודות</a></li>
+                    <li><a href="#">טכנולוגיה</a></li>
+                    <li><a href="#!/projects">פרויקטים</a></li>
+                    <li><a href="#!/contact">צור קשר</a></li>
+                    <li><a href="#">א&nbsp;&nbsp;A</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+</div>
+
+<div class="menuCon">
+    <div class="contLeft">
+        <ul class="menu">
+            <!--<li><a href="#!/home">דף הבית</a></li>-->
+            <li><a href="#!/about">אודות</a></li>
+            <li><a href="#!/techs">טכנולוגיה</a></li>
+            <li><a href="#!/projects">פרויקטים</a></li>
+            <li><a href="#!/contact">צור קשר</a></li>
+            <li><a href="#">א&nbsp;&nbsp;A</a></li>
+        </ul>
+
+        <div class="triL">
+            <img src="img/home/triL.png"/>
+        </div>
+    </div>
+    <div class="contRight">
+        <div class="triR">
+            <img src="img/home/triR.png"/>
+        </div>
+        <a href=#!/home" class="logo">
+            <img src="img/home/logo3.JPG"/>
+        </a>
+    </div>
+</div>
+
+<!--<div class="tri">ferfef</div>-->
+
+
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-view class="main"></div>
+
+<footer>
+    <div class="companyName">אלומיניום <br/>
+        קונסטרקשיין
+    </div>
+    <div class="desc">אלומיניום קונסטרקשיין היא חברה מובילה בתחום תכנון, ייצור ובנייה של מעטפות מורכבות למגדלי
+        משרדים ומבני ציבור החברה שייכת לקבוצת אלומיניום קונסטרקשיין פרו שנוסדה בשנת 1987 . החברה
+        בונה מגוון רחב של פרויקטים, בנייני משרדים ומבנים ציבוריים בארץ ובעולם. הפיתוחים הטכנולוגיים
+        של החברה ומוצריה הציבו סטנדרטים חדשים של איכות וחדשנות בענף קירות המסך בעולם.
+    </div>
+    <div class="address">
+        אופירה 8 א.ת. מישור אדומים 9851106<br/>
+        alcon@alcon.co.il <br/>
+        02-5352581 | פקס: 02-5354008
+        <img src="img/home/sm.JPG">
+    </div>
+</footer>
+
+<!-- In production use:
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+-->
+<!--<script src="bower_components/angular/angular.js"></script>-->
+<script src="bower_components/angular-route/angular-route.js"></script>
+
+<script src="bower_components/swiper/dist/js/swiper.js"></script>
+<script src="bower_components/angular-swiper/dist/angular-swiper.js"></script>
+
+
+<script src="app.js"></script>
+<script src="providers/data-provider.js"></script>
+
+<script src="home/home.js"></script>
+<script src="projects/projects.js"></script>
+<script src="about/about.js"></script>
+<script src="contact/contact.js"></script>
+<script src="techs/techs.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+</html>
