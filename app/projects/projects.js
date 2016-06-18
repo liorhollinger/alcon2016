@@ -32,18 +32,7 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
             this.imgNum += value;
             this.curentImg = this.projimgs[this.imgNum];
         };
-
-        var self = this;
-        this.slides = [];
-        this.slides = this.proj.imgs.map(function (imgName) {
-            var slide = {};
-            slide.id = imgName;
-            slide.image = self.proj.id + '/' + imgName;
-
-            return slide;
-        });
-
-        console.log(this.slides, this.proj.imgs);
+        console.log(this.projimgs);
 
 
 
