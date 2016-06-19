@@ -34,7 +34,13 @@
     </ks-swiper-slide>
     </ks-swiper-container>
 </div>
-
+<div class="proj-details">
+    <h1>
+        <span><strong>{{vm.proj.name}}</strong></span>|
+        <span>יזם: {{vm.proj.developer}}</span>|
+        <span>אדריכל: {{vm.proj.architects}}</span>
+    </h1>
+</div>
 <section class="projectsPage2">
     <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in vm.projs"
        ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">

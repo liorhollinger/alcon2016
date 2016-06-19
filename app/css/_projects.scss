@@ -228,7 +228,7 @@
 //}
 .swiper {
   .swiper-container {
-    height: 100vh;
+    height: 70vh;
 
     .swiper-button-prev {
       background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
@@ -252,7 +252,7 @@
 @media (max-width: 768px) {
   .swiper {
   .swiper-container {
-     height: auto;
+     //height: auto;
 
       .swiper-slide {
         img {
@@ -263,3 +263,50 @@
     }
   }
 }
+
+.proj-details {
+  margin-top: 50px;
+  position: relative;
+  width: 50%;
+  padding: 10px 20px;
+  font-size: 20px;
+  position: relative;
+  color: #fff;
+  background: #5C5D5B;
+
+  h1 {
+    font-size: 1.2em;
+    span {
+      padding: 4px;
+    }
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  a {
+    color: $redBorder;
+    font-weight: bold;
+  }
+
+  &:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -20px;
+    z-index: -1;
+
+    background: #5C5D5B;
+
+    transform-origin: top left;
+    -ms-transform: skew(-30deg, 0deg);
+    -webkit-transform: skew(-30deg, 0deg);
+    transform: skew(-30deg, 0deg);
+  }
+}
+
+

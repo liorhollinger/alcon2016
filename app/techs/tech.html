@@ -1,15 +1,20 @@
 <div class="swiper">
     <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0" pagination-clickable="true">
     <ks-swiper-slide class="swiper-slide" ng-repeat="img in vm.techimgs">
-    <img ng-src="img/proj/{{vm.tech.id}}/{{img}}">
+    <img ng-src="img/tech/{{vm.tech.name}}/{{img}}">
 
     </ks-swiper-slide>
     </ks-swiper-container>
 </div>
-
+<div class="proj-details">
+    <h1>{{vm.tech.name}}</h1>
+    <p>
+        <a href="pdfs/{{vm.tech.pdf}}" download>להורדת קטלוג</a>
+    </p>
+</div>
 <section class="projectsPage2">
-    <a ng-href="#!/project/{{proj.id}}" ng-repeat="tech in vm.techs"
-       ng-style="{'background-image':'url(img/proj/'+tech.id+'/1.jpg)'}">
+    <a ng-href="#!/techs/{{tech.id}}" ng-repeat="tech in vm.techs"
+       ng-style="{'background-image':'url(img/tech/'+tech.name+'/1.jpg)'}">
         <div class="projectName">{{tech.name}}</div>
     </a>
 

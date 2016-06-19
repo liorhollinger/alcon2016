@@ -26,7 +26,6 @@ angular.module('myApp.techs', ['ngRoute', 'ngAnimate'])
         this.tech = DataFactory.getTech(route);
 
         if (this.tech) {
-            console.log(this.tech);
             $rootScope.details = this.tech;
         }
 

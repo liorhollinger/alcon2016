@@ -39,30 +39,7 @@
             </ul>
         </div>
 
-        <div class="menu-corner" ng-class="{small: $root.details}">
-        </div>
-
-        <div class="details" ng-if="$root.details">
-            <div class="menu-corner" ng-if="!$root.details.isSmall">
-                <div class="content">
-                    <h1>שם מערכת 001</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem commodi culpa cupiditate distinctio eum expedita incidunt iusto molestias obcaecati odit, placeat quae quidem quo, recusandae sequi vel veritatis vero?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem commodi culpa cupiditate distinctio eum expedita incidunt iusto molestias obcaecati odit, placeat quae quidem quo, recusandae sequi vel veritatis vero?
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem commodi culpa cupiditate distinctio eum expedita incidunt iusto molestias obcaecati odit, placeat quae quidem quo, recusandae sequi vel veritatis vero?
-                        <a href="sample.pdf" download>להורדת קטלוג</a>
-                    </p>
-                </div>
-            </div>
-            <div class="menu-corner" ng-if="$root.details.isSmall" ng-class="{small: $root.details.isSmall}">
-                <div class="content">
-                    <h1>
-                        <span><strong>{{$root.details.name}}</strong></span>|
-                        <span>יזם: {{$root.details.developer}}</span>|
-                        <span>אדריכל: {{$root.details.architects}}</span>
-                    </h1>
-                </div>
-            </div>
+        <div class="menu-corner">
         </div>
     </div>
     <div class="logo-wrapper">
