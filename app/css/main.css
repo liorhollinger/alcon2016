@@ -508,73 +508,136 @@ footer {
     .swiper .swiper-container .swiper-slide img {
       height: 100%; } }
 .backContact {
-  background-image: url("../img/proj/header2.jpg");
+  background: url(../img/proj/header2.jpg) no-repeat center center fixed;
+  overflow: auto;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-size: cover;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 1000vh;
+  z-index: -1; }
+
+.contactCon {
+  margin-top: 220px;
+  margin-bottom: 3vw;
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  align-items: flex-end; }
-  .backContact .contactCon {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 75.3%;
-    position: absolute;
-    left: 0;
-    top: 211px; }
-    .backContact .contactCon .flex-form {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%; }
+  .contactCon .formCon {
+    margin-bottom: 3vw; }
+    .contactCon .formCon .alconDec {
       display: flex;
       flex-direction: row;
       justify-content: center;
       color: white; }
-      .backContact .contactCon .flex-form .form-inputs {
+      .contactCon .formCon .alconDec div {
+        width: 45vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw; }
+        .contactCon .formCon .alconDec div h1 {
+          font-size: 4em;
+          font-family: Aduma; }
+        .contactCon .formCon .alconDec div h4 {
+          font-size: 2.2em;
+          font-family: NextExit;
+          line-height: 150%;
+          display: flex;
+          flex-wrap: nowrap; }
+      .contactCon .formCon .alconDec .fields {
+        margin-bottom: 3vw; }
+    .contactCon .formCon .fields .flex-form {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: white; }
+      .contactCon .formCon .fields .flex-form .form-inputs {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         width: 22vw;
         height: 25vh;
         padding-left: 2em; }
-        .backContact .contactCon .flex-form .form-inputs input {
-          height: 2.4em;
+        .contactCon .formCon .fields .flex-form .form-inputs input {
+          height: 1.5em;
           border: 3px solid #d52635;
           background-color: transparent;
-          outline: none; }
-          .backContact .contactCon .flex-form .form-inputs input:focus {
+          outline: none;
+          font-family: NextExit;
+          font-weight: lighter;
+          font-size: 1.5em;
+          line-height: 0em;
+          padding: 5px; }
+          .contactCon .formCon .fields .flex-form .form-inputs input:focus {
             border: 3px solid white; }
-        .backContact .contactCon .flex-form .form-inputs ::-webkit-input-placeholder {
+        .contactCon .formCon .fields .flex-form .form-inputs ::-webkit-input-placeholder {
           /* Chrome/Opera/Safari */
           color: white; }
-        .backContact .contactCon .flex-form .form-inputs ::-moz-placeholder {
+        .contactCon .formCon .fields .flex-form .form-inputs ::-moz-placeholder {
           /* Firefox 19+ */
           color: white; }
-        .backContact .contactCon .flex-form .form-inputs :-ms-input-placeholder {
+        .contactCon .formCon .fields .flex-form .form-inputs :-ms-input-placeholder {
           /* IE 10+ */
           color: white; }
-        .backContact .contactCon .flex-form .form-inputs :-moz-placeholder {
+        .contactCon .formCon .fields .flex-form .form-inputs :-moz-placeholder {
           /* Firefox 18- */
           color: white; }
-      .backContact .contactCon .flex-form .description-field textarea {
+      .contactCon .formCon .fields .flex-form .description-field textarea {
         width: 22vw;
         height: 25vh;
         border: 3px solid #d52635;
         background-color: transparent;
-        outline: none; }
-        .backContact .contactCon .flex-form .description-field textarea:focus {
+        outline: none;
+        font-family: NextExit;
+        font-weight: lighter;
+        font-size: 1.5em;
+        line-height: 1em;
+        padding: 5px; }
+        .contactCon .formCon .fields .flex-form .description-field textarea:focus {
           border: 3px solid white; }
-      .backContact .contactCon .flex-form .description-field ::-webkit-input-placeholder {
+      .contactCon .formCon .fields .flex-form .description-field ::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: white; }
-      .backContact .contactCon .flex-form .description-field ::-moz-placeholder {
+      .contactCon .formCon .fields .flex-form .description-field ::-moz-placeholder {
         /* Firefox 19+ */
         color: white; }
-      .backContact .contactCon .flex-form .description-field :-ms-input-placeholder {
+      .contactCon .formCon .fields .flex-form .description-field :-ms-input-placeholder {
         /* IE 10+ */
         color: white; }
-      .backContact .contactCon .flex-form .description-field :-moz-placeholder {
+      .contactCon .formCon .fields .flex-form .description-field :-moz-placeholder {
         /* Firefox 18- */
         color: white; }
+    .contactCon .formCon .fields .sendButtonCon {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+      .contactCon .formCon .fields .sendButtonCon .tri {
+        width: 2em;
+        background-color: #d52635;
+        -ms-transform: skewX(-35deg);
+        /* IE 9 */
+        -webkit-transform: skewX(-35deg);
+        /* Safari */
+        transform: skewX(-35deg);
+        /* Standard syntax */
+        position: relative;
+        z-index: 0;
+        right: 25px; }
+      .contactCon .formCon .fields .sendButtonCon input {
+        position: relative;
+        z-index: 2;
+        left: 25px;
+        background-color: #d52635;
+        border: none;
+        color: white;
+        height: 23px;
+        font-family: NextExit;
+        font-weight: lighter;
+        font-size: 1.5em;
+        line-height: 0em; }
 
 /*# sourceMappingURL=main.css.map */
