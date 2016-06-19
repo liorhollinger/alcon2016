@@ -1,4 +1,5 @@
 <div class="projBack"></div>
+
 <div class="aboutContainer">
     <div>
         <p><b>אלומיניום קונסטרקשיין </b>
@@ -51,12 +52,14 @@
     </div>
 </div>
 
-<div ng-repeat="member in vm.staff">
-    <div class="staffContainer">
-        <div class="staffImg"><img ng-src="img/about/staff/{{member.id}}.jpg"></div>
-        <article>
-            <div class="staffName"><b>{{member.name}}</b></div>
-            <div class="staffDsc">{{member.about}}</div>
-        </article>
+<div class="staffContainer">
+    <div ng-repeat="member in vm.staff">
+        <div class="staffContainer">
+            <div class="staffImg"><img ng-src="img/about/staff/{{member.id}}.jpg"></div>
+            <article>
+                <div class="staffName"><b>{{member.name}}</b></div>
+                <div class="staffDsc">{{member.about}}</div>
+            </article>
+        </div>
     </div>
 </div>

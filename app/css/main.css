@@ -3,16 +3,19 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/Aduma-Light.woff") format("woff"), url("../fonts/Aduma-Light.woff2") format("woff2"); }
+
 @font-face {
   font-family: Aduma;
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/Aduma-Bold.woff") format("woff"), url("../fonts/Aduma-Bold.woff2") format("woff2"); }
+
 @font-face {
   font-family: NextExit;
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/NextExit-Light.woff") format("woff"), url("../fonts/Aduma-Light.woff2") format("woff2"); }
+
 body {
   direction: rtl;
   display: flex;
@@ -79,6 +82,7 @@ body {
   .menuCon .contLeft {
     width: 80%;
     color: red; } }
+
 .navConBoot {
   display: none; }
   .navConBoot .navbar-default {
@@ -89,20 +93,31 @@ body {
 @media (max-width: 768px) {
   .navConBoot {
     display: inherit; }
-
   .menuCon {
     display: none; }
-
   .nav-wrapper {
     top: 0; }
-
   .menu-wrapper, .logo-wrapper {
     display: none !important; } }
+
 @media (max-width: 1280px) {
   .nav-wrapper .details .menu-corner {
     left: -88px !important; }
     .nav-wrapper .details .menu-corner .content {
       padding-left: 115px !important; } }
+
+@media (max-width: 1460px) {
+  .nav-wrapper .logo {
+    left: -120px !important; } }
+
+@media (max-width: 1280px) {
+  .nav-wrapper .logo {
+    left: -145px !important; } }
+
+@media (max-width: 1280px) {
+  .nav-wrapper .logo {
+    left: -160px !important; } }
+
 .nav-wrapper {
   display: flex;
   position: absolute;
@@ -152,10 +167,12 @@ body {
       z-index: 1030;
       right: 0; }
       .nav-wrapper .logo-wrapper a img {
-        width: 100%; }
+        width: 100%;
+        position: absolute;
+        right: 20%; }
   .nav-wrapper .logo {
     position: absolute;
-    left: -100px;
+    left: -120px;
     min-width: 150px;
     width: 100%;
     height: 100%;
@@ -239,9 +256,12 @@ footer {
     line-height: 90%;
     padding-right: 5vw; }
   footer .address {
-    min-width: 300px;
+    min-width: 320px;
     font-size: 1.5em;
     font-family: NextExit; }
+    footer .address a {
+      text-decoration: none;
+      color: inherit; }
 
 @media (max-width: 1000px) {
   footer {
@@ -261,6 +281,7 @@ footer {
       footer > div.address {
         text-align: center;
         border-left: none; } }
+
 .video {
   width: 100vw;
   height: 100vh;
@@ -332,13 +353,13 @@ footer {
     .info .homeName {
       text-align: center;
       font-size: 10vw; }
-
   .stats {
     flex-direction: column; }
     .stats article {
       border-bottom: 1px #D62439 solid; }
     .stats .separator {
       display: none; } }
+
 .aboutContainer {
   display: flex;
   direction: rtl;
@@ -366,7 +387,6 @@ footer {
     font-size: 4vw; }
     .aboutContainer .values {
       font-size: 4.5vw; }
-
   .staffContainer {
     flex-direction: column; }
     .staffContainer .staffImg {
@@ -374,11 +394,13 @@ footer {
     .staffContainer article {
       text-align: center;
       padding-right: 0; } }
+
 @media (max-width: 500px) {
   .aboutContainer {
     font-size: 6vw; }
     .aboutContainer .values {
       font-size: 8vw; } }
+
 .projBack {
   background-image: url("../img/proj/header2.jpg");
   background-size: cover;
@@ -421,8 +443,8 @@ footer {
       justify-content: center;
       border-top: 3px solid #d52635;
       font-family: Aduma; }
-    .projectsPage a .projectName:hover {
-      background-color: #d52635; }
+  .projectsPage a:hover .projectName {
+    background-color: #d52635; }
 
 .mySwiper {
   position: absolute;
@@ -488,8 +510,8 @@ footer {
       justify-content: center;
       border-top: 3px solid #d52635;
       font-family: Aduma; }
-    .projectsPage2 a .projectName:hover {
-      background-color: #d52635; }
+  .projectsPage2 a:hover .projectName {
+    background-color: #d52635; }
 
 .swiper .swiper-container {
   height: 100vh; }
@@ -507,6 +529,7 @@ footer {
     height: auto; }
     .swiper .swiper-container .swiper-slide img {
       height: 100%; } }
+
 .backContact {
   background: url(../img/proj/header2.jpg) no-repeat center center fixed;
   overflow: auto;
@@ -610,6 +633,7 @@ footer {
       .contactCon .formCon .fields .flex-form .description-field :-moz-placeholder {
         /* Firefox 18- */
         color: white; }
+<<<<<<< HEAD
     .contactCon .formCon .fields .sendButtonCon {
       display: flex;
       justify-content: flex-end;
@@ -641,3 +665,5 @@ footer {
         line-height: 0em; }
 
 /*# sourceMappingURL=main.css.map */
+=======
+>>>>>>> aa1028a3a78ced56da0084d789a8990e66254173
