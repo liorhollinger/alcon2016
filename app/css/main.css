@@ -258,8 +258,7 @@ footer {
   top: 0;
   z-index: 0;
   background-position: center;
-  background-repeat: no-repeat;
-  background-color: grey; }
+  background-repeat: no-repeat; }
 
 .projectsPage {
   display: flex;
@@ -373,16 +372,74 @@ footer {
     height: auto; }
     .swiper .swiper-container .swiper-slide img {
       height: 100%; } }
-.contactCon {
+.backContact {
+  background-image: url("../img/proj/header2.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
-  justify-content: center; }
-  .contactCon .flex-form {
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-end; }
+  .backContact .contactCon {
     display: flex;
-    flex-direction: row;
-    justify-content: center; }
-    .contactCon .flex-form .form-inputs {
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 75.3%;
+    position: absolute;
+    left: 0;
+    top: 211px; }
+    .backContact .contactCon .flex-form {
       display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
+      flex-direction: row;
+      justify-content: center;
+      color: white; }
+      .backContact .contactCon .flex-form .form-inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 22vw;
+        height: 25vh;
+        padding-left: 2em; }
+        .backContact .contactCon .flex-form .form-inputs input {
+          height: 2.4em;
+          border: 3px solid #d52635;
+          background-color: transparent;
+          outline: none; }
+          .backContact .contactCon .flex-form .form-inputs input:focus {
+            border: 3px solid white; }
+        .backContact .contactCon .flex-form .form-inputs ::-webkit-input-placeholder {
+          /* Chrome/Opera/Safari */
+          color: white; }
+        .backContact .contactCon .flex-form .form-inputs ::-moz-placeholder {
+          /* Firefox 19+ */
+          color: white; }
+        .backContact .contactCon .flex-form .form-inputs :-ms-input-placeholder {
+          /* IE 10+ */
+          color: white; }
+        .backContact .contactCon .flex-form .form-inputs :-moz-placeholder {
+          /* Firefox 18- */
+          color: white; }
+      .backContact .contactCon .flex-form .description-field textarea {
+        width: 22vw;
+        height: 25vh;
+        border: 3px solid #d52635;
+        background-color: transparent;
+        outline: none; }
+        .backContact .contactCon .flex-form .description-field textarea:focus {
+          border: 3px solid white; }
+      .backContact .contactCon .flex-form .description-field ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: white; }
+      .backContact .contactCon .flex-form .description-field ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: white; }
+      .backContact .contactCon .flex-form .description-field :-ms-input-placeholder {
+        /* IE 10+ */
+        color: white; }
+      .backContact .contactCon .flex-form .description-field :-moz-placeholder {
+        /* Firefox 18- */
+        color: white; }
 
 /*# sourceMappingURL=main.css.map */
