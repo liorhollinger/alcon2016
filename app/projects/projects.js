@@ -19,11 +19,15 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
         this.projs = DataFactory.getProjs();
     }])
 
-    .controller('ProjCtrl', ['$routeParams', 'DataFactory', function ($routeParams, DataFactory) {
+    .controller('ProjCtrl', ['$routeParams', 'DataFactory', '$rootScope', '$scope', function ($routeParams, DataFactory, $rootScope, $scope) {
         //console.log('$routeParams', $routeParams);
         this.projs = DataFactory.getProjs();
         var route = ''+$routeParams.id;
         this.proj = DataFactory.getProj(route);
+        if (this.proj) {
+            $rootScope.details = this.proj;
+            $rootScope.details.isSmall = true;
+        }
         this.projimgs = this.proj.imgs;
         this.imgNum = 0;
         this.curentImg = this.projimgs[this.imgNum];
@@ -35,7 +39,9 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
         console.log(this.projimgs);
 
 
-
+        $scope.$on('$destroy', function () {
+            $rootScope.details = null;
+        });
 
 
 

@@ -1,0 +1,75 @@
+<div class="nav-wrapper">
+    <div class="navConBoot">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href=#!/home">"><img src="img/home/logo3.JPG" style="width: 73px; left:0; top:0; position: absolute "/></a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+                    <ul class="nav navbar-nav">
+                        <!--<li><a href="#!/home">דף הבית</a></li>-->
+                        <li><a href="#!/about" data-toggle="collapse" data-target=".navbar-collapse">אודות</a></li>
+                        <li><a href="#!/techs" data-toggle="collapse" data-target=".navbar-collapse">טכנולוגיה</a></li>
+                        <li><a href="#!/projects" data-toggle="collapse" data-target=".navbar-collapse">פרויקטים</a></li>
+                        <li><a href="#!/contact" data-toggle="collapse" data-target=".navbar-collapse">צור קשר</a></li>
+                        <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse">א&nbsp;&nbsp;A</a></li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+        </nav>
+    </div>
+
+    <div class="menu-wrapper">
+        <div class="menu">
+            <ul>
+                <!--<li><a href="#!/home">דף הבית</a></li>-->
+                <li ng-class="{active: isActive('about')}"><a href="#!/about">אודות</a></li>
+                <li ng-class="{active: isActive('tech')}"><a href="#!/techs">טכנולוגיה</a></li>
+                <li ng-class="{active: isActive('project')}"><a href="#!/projects">פרויקטים</a></li>
+                <li ng-class="{active: isActive('contact')}"><a href="#!/contact">צור קשר</a></li>
+                <li><a href="#">א&nbsp;&nbsp;A</a></li>
+            </ul>
+        </div>
+
+        <div class="menu-corner" ng-class="{small: $root.details}">
+        </div>
+
+        <div class="details" ng-if="$root.details">
+            <div class="menu-corner" ng-if="!$root.details.isSmall">
+                <div class="content">
+                    <h1>שם מערכת 001</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem commodi culpa cupiditate distinctio eum expedita incidunt iusto molestias obcaecati odit, placeat quae quidem quo, recusandae sequi vel veritatis vero?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem commodi culpa cupiditate distinctio eum expedita incidunt iusto molestias obcaecati odit, placeat quae quidem quo, recusandae sequi vel veritatis vero?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem commodi culpa cupiditate distinctio eum expedita incidunt iusto molestias obcaecati odit, placeat quae quidem quo, recusandae sequi vel veritatis vero?
+                        <a href="sample.pdf" download>להורדת קטלוג</a>
+                    </p>
+                </div>
+            </div>
+            <div class="menu-corner" ng-if="$root.details.isSmall" ng-class="{small: $root.details.isSmall}">
+                <div class="content">
+                    <h1>
+                        <span><strong>{{$root.details.name}}</strong></span>|
+                        <span>יזם: {{$root.details.developer}}</span>|
+                        <span>אדריכל: {{$root.details.architects}}</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo-wrapper">
+        <a href=#!/home" class="logo">
+            <img src="img/home/logo3.JPG"/>
+        </a>
+        <div class="logo"></div>
+    </div>
+
+</div>
