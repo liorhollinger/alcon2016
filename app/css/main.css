@@ -566,6 +566,10 @@ hr {
         width: 45vw;
         padding-top: 3vw;
         padding-bottom: 3vw; }
+        @media (max-width: 728px) {
+          .contactCon .formCon .alconDec div {
+            width: 100%;
+            padding: 20px; } }
         .contactCon .formCon .alconDec div h1 {
           font-size: 4em;
           font-family: Aduma; }
@@ -582,6 +586,9 @@ hr {
       flex-direction: row;
       justify-content: center;
       color: white; }
+      @media (max-width: 728px) {
+        .contactCon .formCon .fields .flex-form {
+          flex-direction: column; } }
       .contactCon .formCon .fields .flex-form .form-inputs {
         display: flex;
         flex-direction: column;
@@ -589,6 +596,10 @@ hr {
         width: 22vw;
         height: 25vh;
         padding-left: 2em; }
+        @media (max-width: 728px) {
+          .contactCon .formCon .fields .flex-form .form-inputs {
+            margin-right: 10px;
+            width: auto; } }
         .contactCon .formCon .fields .flex-form .form-inputs input {
           height: 1.5em;
           border: 3px solid #d52635;
@@ -624,6 +635,10 @@ hr {
         font-size: 1.5em;
         line-height: 1em;
         padding: 5px; }
+        @media (max-width: 728px) {
+          .contactCon .formCon .fields .flex-form .description-field textarea {
+            margin: 10px;
+            width: auto; } }
         .contactCon .formCon .fields .flex-form .description-field textarea:focus {
           border: 3px solid white; }
       .contactCon .formCon .fields .flex-form .description-field ::-webkit-input-placeholder {

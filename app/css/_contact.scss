@@ -54,6 +54,11 @@
         padding-top: 3vw;
         padding-bottom: 3vw;
 
+        @media (max-width: 728px) {
+          width: 100%;
+          padding: 20px
+        }
+
         h1 {
           font-size: 4em;
           font-family: Aduma;
@@ -78,6 +83,10 @@
         justify-content: center;
         color: white;
 
+        @media (max-width: 728px) {
+          flex-direction: column;
+        }
+
         .form-inputs {
           display: flex;
           flex-direction: column;
@@ -85,6 +94,11 @@
           width: 22vw;
           height: 25vh;
           padding-left: 2em;
+
+          @media (max-width: 728px) {
+            margin-right: 10px;
+            width: auto;
+          }
 
           input {
             //width: 22vw;
@@ -133,6 +147,12 @@
             font-size: 1.5em;
             line-height: 1em;
             padding: 5px;
+
+            @media (max-width: 728px) {
+              margin: 10px;
+              width: auto;
+            }
+
             &:focus {
               border: 3px solid white;
             }
