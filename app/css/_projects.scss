@@ -51,9 +51,11 @@
       border-top: 3px solid $redBorder;
       font-family: Aduma;
     }
-    .projectName:hover{
-       background-color: $redBorder;
-     }
+  }
+  a:hover{
+    .projectName {
+      background-color: $redBorder;
+    }
   }
 }
 
@@ -139,7 +141,10 @@
       border-top: 3px solid $redBorder;
       font-family: Aduma;
     }
-    .projectName:hover{
+
+  }
+  a:hover{
+    .projectName {
       background-color: $redBorder;
     }
   }

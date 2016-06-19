@@ -242,9 +242,12 @@ footer {
     line-height: 90%;
     padding-right: 5vw; }
   footer .address {
-    min-width: 300px;
+    min-width: 320px;
     font-size: 1.5em;
     font-family: NextExit; }
+    footer .address a {
+      text-decoration: none;
+      color: inherit; }
 
 @media (max-width: 1000px) {
   footer {
@@ -426,8 +429,8 @@ footer {
       justify-content: center;
       border-top: 3px solid #d52635;
       font-family: Aduma; }
-    .projectsPage a .projectName:hover {
-      background-color: #d52635; }
+  .projectsPage a:hover .projectName {
+    background-color: #d52635; }
 
 .mySwiper {
   position: absolute;
@@ -493,8 +496,8 @@ footer {
       justify-content: center;
       border-top: 3px solid #d52635;
       font-family: Aduma; }
-    .projectsPage2 a .projectName:hover {
-      background-color: #d52635; }
+  .projectsPage2 a:hover .projectName {
+    background-color: #d52635; }
 
 .swiper .swiper-container {
   height: 100vh; }
