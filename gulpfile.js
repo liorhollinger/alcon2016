@@ -4,7 +4,7 @@ const clean = require('gulp-clean');
 const jshint = require('gulp-jshint');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
+//const imagemin = require('gulp-imagemin');
 const server = require('gulp-server-livereload');
 const sass = require('gulp-sass');
 
@@ -101,4 +101,4 @@ gulp.task('sass:watch', function () {
 });
 
 // Define the default task as a sequence of the above tasks
-gulp.task('default', ['clean', 'scripts', 'imagemin', 'copy']);
+gulp.task('default', ['clean', 'scripts','copy']);
