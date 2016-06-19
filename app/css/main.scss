@@ -1,7 +1,7 @@
 // === base ===
 @import "base/typography";
 @import "base/reset";
-@import "app";
+@import "app.scss";
 
 // === helpers ==
 @import "helpers/variables";
@@ -12,6 +12,6 @@
 
 // === pages ===
 @import "home";
-@import "about";
+@import "about.scss";
 @import "projects";
 @import "contact";
