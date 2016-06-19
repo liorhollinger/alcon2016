@@ -1,4 +1,6 @@
 
+// ========= Desktop =========
+
 .aboutContainer{
 
   //layout
@@ -15,7 +17,7 @@
   color:$greyTxt;
 
   h2{
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 5vh 0 5vh 0;
   }
 
@@ -56,12 +58,13 @@ hr{
 //  }
 //}
 
+// ========= Tablet =========
 @media (max-width: 950px) {
   .aboutContainer{
     font-size: 4vw;
 
     h2{
-      font-size: 9vw;
+      font-size: 6vw;
     }
   }
 
@@ -77,6 +80,8 @@ hr{
   //}
 }
 
+// ========= Mobile =========
+
 @media (max-width: 500px) {
 
   .projBack{
@@ -84,7 +89,7 @@ hr{
   }
 
   .aboutContainer{
-    font-size: 6vw;
+    font-size: 5vw;
 
     h2{
       font-weight: bold;

@@ -167,6 +167,7 @@ body {
       z-index: 1030;
       right: 0; }
       .nav-wrapper .logo-wrapper a img {
+        margin-top: 16px;
         width: 100%;
         position: absolute;
         right: 20%; }
@@ -370,7 +371,7 @@ footer {
   line-height: 120%;
   color: #383737; }
   .aboutContainer h2 {
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 5vh 0 5vh 0; }
   .aboutContainer span {
     font-weight: bold;
@@ -390,13 +391,13 @@ hr {
   .aboutContainer {
     font-size: 4vw; }
     .aboutContainer h2 {
-      font-size: 9vw; } }
+      font-size: 6vw; } }
 
 @media (max-width: 500px) {
   .projBack {
     height: 25vh !important; }
   .aboutContainer {
-    font-size: 6vw; }
+    font-size: 5vw; }
     .aboutContainer h2 {
       font-weight: bold; }
     .aboutContainer p {
@@ -530,37 +531,9 @@ hr {
     height: 100%; } }
 
 .proj-details {
-  margin-top: 50px;
-  position: relative;
-  width: 50%;
-  padding: 10px 20px;
-  font-size: 20px;
-  position: relative;
-  color: #fff;
-  background: #5C5D5B; }
-  .proj-details h1 {
-    font-size: 1.2em; }
-    .proj-details h1 span {
-      padding: 4px; }
-  .proj-details p {
-    font-size: 1em; }
-  .proj-details a {
-    color: #d52635;
-    font-weight: bold; }
-  .proj-details:after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: -20px;
-    z-index: -1;
-    background: #5C5D5B;
-    transform-origin: top left;
-    -ms-transform: skew(-30deg, 0deg);
-    -webkit-transform: skew(-30deg, 0deg);
-    transform: skew(-30deg, 0deg); }
+  font-family: Aduma;
+  font-size: 1.5em;
+  text-align: center; }
 
 .backContact {
   background: url(../img/proj/header2.jpg) no-repeat center center fixed;
