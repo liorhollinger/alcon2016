@@ -5,6 +5,6 @@ bower_components/
 tmp
 .DS_Store
 .idea
-img/
 app/gulpfile.js
 package.json
+Thumbs.db
