@@ -128,7 +128,7 @@ body {
   flex-direction: row-reverse;
   z-index: 1030;
   width: 100%;
-  top: 50px;
+  top: 40px;
   font-family: NextExit;
   font-weight: lighter; }
   .nav-wrapper .menu-wrapper {
@@ -173,7 +173,7 @@ body {
         margin-top: 16px;
         width: 100%;
         position: absolute;
-        right: 20%; }
+        right: 25%; }
   .nav-wrapper .logo {
     position: absolute;
     left: -120px;
@@ -282,15 +282,34 @@ footer {
       footer > div.address {
         text-align: center;
         border-left: none; } }
+.video-container {
+  width: 100%;
+  position: relative; }
+  @media (max-width: 320px) {
+    .video-container {
+      margin-top: 53px; } }
+  .video-container video {
+    width: 100%;
+    height: 56.25%; }
+  .video-container .video-controls {
+    position: absolute;
+    top: 40%;
+    left: 50%; }
+    @media (max-width: 320px) {
+      .video-container .video-controls {
+        left: 40%;
+        top: 25%; } }
+    .video-container .video-controls img {
+      width: 100px;
+      height: 100px; }
+
 iframe.video {
   width: 100vw;
   height: 100vh;
-  position: absolute;
   top: 0;
   z-index: 0; }
 
 .info {
-  margin-top: 74vh;
   width: 100vw;
   background-color: white;
   display: flex;
@@ -662,6 +681,11 @@ hr {
       justify-content: flex-end;
       padding-top: 3px;
       padding-bottom: 3px; }
+      @media (max-width: 728px) {
+        .contactCon .formCon .fields .sendButtonCon {
+          margin: 22px;
+          margin-top: 0;
+          width: 90vw; } }
       .contactCon .formCon .fields .sendButtonCon .tri {
         width: 2em;
         background-color: #d52635;

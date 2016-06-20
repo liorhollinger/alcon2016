@@ -200,6 +200,11 @@
         justify-content: flex-end;
         padding-top: 3px;
         padding-bottom: 3px;
+        @media (max-width: 728px) {
+          margin: 22px;
+          margin-top: 0;
+          width: 90vw;
+        }
         .tri {
           width: 2em;
           //height: 100%;
