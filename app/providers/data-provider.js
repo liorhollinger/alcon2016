@@ -28,39 +28,11 @@ angular.module('myApp')
 
         var projs = [
             {
-                id: 'ashdar2000',
-                name: 'אשדר 2000',
-                developer: 'קבוצת אשטרום',
-                architects: 'יהושוע פינצי ושמואל רווה אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg']
-            },
-            {
-                id: 'azorimPark',
-                name: 'פארק אזורים',
-                developer: 'ריט ישראל בע"מ',
-                architects: 'רפפורט אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
-            },
-            {
-                id: 'azrieliAkko',
-                name: 'עזריאלי עכו כדור',
-                developer: 'קבוצת עזריאלי',
-                architects: 'דוד עזריאלי, יגאל צמיר אדריכלים ויעל אוקו אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
-            },
-            {
-                id: 'azrieliCenterHolon',
-                name: 'מתחם עזריאלי חולון',
-                developer: 'קבוצת עזריאלי',
-                architects: 'אדריכל דוד עזריאלי, משהה צור אדריכלים, דוד עזריאלי אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg']
-            },
-            {
-                id: 'azrieliMallAta',
-                name: 'קניון עזריאלי קרית אתה',
-                developer: 'ריט ישראל בע"מ',
-                architects: 'רפפורט אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
+                id: 'platinumTower',
+                name: 'מגדל פלטינום',
+                developer: 'אמות השקעות בע"מ',
+                architects: 'לאה רובננקו אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg']
             },
             {
                 id: 'azrieliSquerTower',
@@ -70,18 +42,11 @@ angular.module('myApp')
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
             },
             {
-                id: 'cityGate',
-                name: 'מגדל שער הסיטי',
-                developer: 'מזל וברכה בע"מ',
-                architects: 'פלג אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
-            },
-            {
-                id: 'concordTower',
-                name: 'מגדל קונקורד',
-                developer: 'אפריקה ישראל',
-                architects: 'יסקי מור סיון אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg']
+                id: 'quiryatHamemshala',
+                name: 'קרית הממשלה',
+                developer: 'אפריקה מינרב',
+                architects: 'בן פלג אדריכלים, צפריר גנני אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg']
             },
             {
                 id: 'discountTower',
@@ -98,11 +63,81 @@ angular.module('myApp')
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
             },
             {
-                id: 'matamHifa',
-                name: 'מת"מ חיפה',
-                developer: 'חברת גב ים',
-                architects: 'משה צור אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg']
+                id: 'museumTower',
+                name: 'מגדל המוזיאון',
+                developer: 'חברת מגדל',
+                architects: 'צבי גבאי אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg']
+            },
+            {
+                id: 'shoftimTower',
+                name: 'מגדל השופטים',
+                developer: 'גינדי',
+                architects: 'רוני זיס אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg']
+            },
+            {
+                id: 'concordTower',
+                name: 'מגדל קונקורד',
+                developer: 'אפריקה ישראל',
+                architects: 'יסקי מור סיון אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg']
+            },
+            {
+                id: 'azrieliCenterHolon',
+                name: 'מתחם עזריאלי חולון',
+                developer: 'קבוצת עזריאלי',
+                architects: 'אדריכל דוד עזריאלי, משהה צור אדריכלים, דוד עזריאלי אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg']
+            },
+            {
+                id: 'petahTikvaTower',
+                name: 'בית מגדל פ"ת',
+                developer: 'חברת ביטוח מגדל',
+                architects: 'גבאי אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+            },
+            {
+                id: 'tamarPark',
+                name: 'פארק תמר',
+                developer: 'רורברג השקעות ובניה',
+                architects: 'בן פלג אדריכלים, צפריר גנני אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
+            },
+            {
+                id: 'yesPlanet',
+                name: 'יס פלאנט',
+                developer: 'תיאטראות ישראל',
+                architects: 'יסקי מור סיון אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg','15.jpg']
+            },
+            {
+                id: 'cityGate',
+                name: 'מגדל שער הסיטי',
+                developer: 'מזל וברכה בע"מ',
+                architects: 'פלג אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
+            },
+            {
+                id: 'tradeTower',
+                name: 'מגדל הטרייד טאוור',
+                developer: 'אטבליסמנט ניהול',
+                architects: 'יסקי מור סיון אדריכלים',
+                imgs: ['1.jpg']
+            },
+            {
+                id: 'sapTower',
+                name: 'מגדל שאפ',
+                developer: 'קבוצת שאפ',
+                architects: 'רובין אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
+            },
+            {
+                id: 'twinTowers',
+                name: 'מגדלי התאומים',
+                developer: 'מגדלי התאומים בע"מ מגדלי עסקים(אחזקות)בע"מ',
+                architects: 'יסקי מור סיון אדריכלים',
+                imgs: ['1.jpg','2.jpg']
             },
             {
                 id: 'mercury',
@@ -112,19 +147,41 @@ angular.module('myApp')
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg']
             },
             {
-                id: 'museumTower',
-                name: 'מגדל המוזיאון',
-                developer: 'חברת מגדל',
-                architects: 'צבי גבאי אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg']
+                id: 'azorimPark',
+                name: 'פארק אזורים',
+                developer: 'ריט ישראל בע"מ',
+                architects: 'רפפורט אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
             },
             {
-                id: 'petahTikvaTower',
-                name: 'מגדל פתח תקווה',
-                developer: 'חברת ביטוח מגדל',
-                architects: 'גבאי אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+                id: 'ashdar2000',
+                name: 'אשדר 2000',
+                developer: 'קבוצת אשטרום',
+                architects: 'יהושוע פינצי ושמואל רווה אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg']
+            },
+            {
+                id: 'azrieliAkko',
+                name: 'עזריאלי עכו כדור',
+                developer: 'קבוצת עזריאלי',
+                architects: 'דוד עזריאלי, יגאל צמיר אדריכלים ויעל אוקו אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
+            },
+            {
+                id: 'azrieliMallAta',
+                name: 'עזריאלי קירית אתא כדור',
+                developer: 'קבוצת עזריאלי',
+                architects: 'אד\' דוד עזריאלי, יגאל צמיר, יעל אוקו אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
+            },
+            {
+                id: 'matamHifa',
+                name: 'מת"מ חיפה',
+                developer: 'חברת גב ים',
+                architects: 'משה צור אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg']
             }
+
 
         ];
 
