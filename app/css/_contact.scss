@@ -49,6 +49,11 @@
       justify-content: center;
       color: white;
 
+      //a{
+      //  text-decoration: none;
+      //  color:inherit;
+      //  font-style: nextExit;
+      //}
       div {
         width: 45vw;
         padding-top: 3vw;
@@ -63,13 +68,21 @@
           font-size: 4em;
           font-family: Aduma;
         }
-        h4 {
+        p{
           font-size: 2.2em;
           font-family: NextExit;
           line-height: 150%;
           display: flex;
           flex-wrap: nowrap;
+          margin: 0;
         }
+        //h4 {
+        //  font-size: 2.2em;
+        //  font-family: NextExit;
+        //  line-height: 150%;
+        //  display: flex;
+        //  flex-wrap: nowrap;
+        //}
       }
 
       .fields {

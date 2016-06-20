@@ -4,6 +4,7 @@
 angular.module('myApp', [
     'ngRoute',
     'ngAnimate',
+    'ngSanitize',
     'ksSwiper',
     'myApp.home',
     'myApp.about',

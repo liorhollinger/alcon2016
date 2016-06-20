@@ -28,7 +28,32 @@
 </div>
 
 <div class="filler">
-    <img src="img/home/filler.JPG"/>
+
+    <section class="projectsPage">
+        <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in vm.projs" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
+
+            <div class="projectName">{{proj.name}}</div>
+
+
+        </a>
+
+        <!--<div  class="projectThumbs">-->
+
+
+        <!--<a ng-repeat="proj in vm.projs" ng-href="#!/project/{{proj.id}}"  class="projectThumb" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}" >-->
+
+        <!--<div class="projectName">{{proj.name}}</div>-->
+        <!--</a>-->
+
+        <!--</div>-->
+
+        <!--&lt;!&ndash;<pre hidden>&ndash;&gt;-->
+        <!--&lt;!&ndash;{{vm.projs | json}}&ndash;&gt;-->
+        <!--&lt;!&ndash;</pre>&ndash;&gt;-->
+
+    </section>
+
+
 </div>
 
 <section class="stats">

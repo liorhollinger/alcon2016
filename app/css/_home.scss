@@ -48,12 +48,6 @@
   }
 }
 
-.filler {
-  img {
-    width: 100vw;
-  }
-}
-
 .stats {
   width: 100vw;
   display: flex;
@@ -62,6 +56,7 @@
   justify-content: space-around;
   color: #D62439;
   padding: 2em;
+  padding-top: 0;
   font-family: NextExit;
   article {
     text-align: center;

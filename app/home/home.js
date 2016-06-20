@@ -9,6 +9,6 @@ angular.module('myApp.home', ['ngRoute'])
   });
 }])
 
-.controller('homeCtrl', [function() {
-
+.controller('homeCtrl', ["DataFactory", function(DataFactory) {
+  this.projs = DataFactory.getProjs().slice(0, 3);
 }]);

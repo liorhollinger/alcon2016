@@ -21,7 +21,7 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
 
     .controller('ProjCtrl', ['$routeParams', 'DataFactory', '$rootScope', '$scope', function ($routeParams, DataFactory, $rootScope, $scope) {
         //console.log('$routeParams', $routeParams);
-        this.projs = DataFactory.getProjs();
+        this.projs = DataFactory.getProjs().slice(0,3);
         var route = ''+$routeParams.id;
         this.proj = DataFactory.getProj(route);
         if (this.proj) {
