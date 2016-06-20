@@ -3,18 +3,20 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/Aduma-Light.woff") format("woff"), url("../fonts/Aduma-Light.woff2") format("woff2"); }
-
 @font-face {
   font-family: Aduma;
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/Aduma-Bold.woff") format("woff"), url("../fonts/Aduma-Bold.woff2") format("woff2"); }
-
 @font-face {
   font-family: NextExit;
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/NextExit-Light.woff") format("woff"), url("../fonts/Aduma-Light.woff2") format("woff2"); }
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
 
 body {
   direction: rtl;
@@ -87,7 +89,6 @@ body {
   .menuCon .contLeft {
     width: 80%;
     color: red; } }
-
 .navConBoot {
   display: none; }
   .navConBoot .navbar-default {
@@ -98,31 +99,29 @@ body {
 @media (max-width: 768px) {
   .navConBoot {
     display: inherit; }
+
   .menuCon {
     display: none; }
+
   .nav-wrapper {
     top: 0; }
+
   .menu-wrapper, .logo-wrapper {
     display: none !important; } }
-
 @media (max-width: 1280px) {
   .nav-wrapper .details .menu-corner {
     left: -88px !important; }
     .nav-wrapper .details .menu-corner .content {
       padding-left: 115px !important; } }
-
 @media (max-width: 1460px) {
   .nav-wrapper .logo {
     left: -120px !important; } }
-
 @media (max-width: 1280px) {
   .nav-wrapper .logo {
     left: -145px !important; } }
-
 @media (max-width: 1280px) {
   .nav-wrapper .logo {
     left: -160px !important; } }
-
 .nav-wrapper {
   display: flex;
   position: absolute;
@@ -137,8 +136,7 @@ body {
     width: 100%;
     height: 133px;
     background-color: transparent;
-    display: flex;
-    border-top: 3px solid #d52635; }
+    display: flex; }
     .nav-wrapper .menu-wrapper .menu {
       width: 100%;
       height: auto; }
@@ -227,7 +225,7 @@ body {
     background-color: black;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    left: -22px;
+    left: -40px;
     top: -3px;
     width: 100%;
     height: 133px;
@@ -287,8 +285,7 @@ footer {
       footer > div.address {
         text-align: center;
         border-left: none; } }
-
-.video {
+iframe.video {
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -357,24 +354,24 @@ footer {
     .info .homeName {
       text-align: center;
       font-size: 10vw; }
+
   .stats {
     flex-direction: column; }
     .stats article {
       border-bottom: 1px #D62439 solid; }
     .stats .separator {
       display: none; } }
-
 .aboutContainer {
   direction: rtl;
   display: flex;
   flex-direction: column;
-  padding: 1vw 6vw 1vw 6vw;
-  font-size: 2.5vw;
+  padding: 1vw 12vw 1vw 12vw;
+  font-size: 2.2em;
   font-family: NextExit;
   line-height: 120%;
   color: #383737; }
   .aboutContainer h2 {
-    font-size: 4vw;
+    font-size: 1.5em;
     margin: 5vh 0 5vh 0; }
   .aboutContainer span {
     font-weight: bold;
@@ -392,20 +389,19 @@ hr {
 
 @media (max-width: 950px) {
   .aboutContainer {
-    font-size: 4vw; }
+    font-size: 3.5vw; }
     .aboutContainer h2 {
-      font-size: 6vw; } }
-
+      font-size: 5.5vw; } }
 @media (max-width: 500px) {
   .projBack {
     height: 25vh !important; }
+
   .aboutContainer {
     font-size: 5vw; }
     .aboutContainer h2 {
       font-weight: bold; }
     .aboutContainer p {
       margin: 0 0 5vw 0; } }
-
 .projBack {
   background-image: url("../img/proj/header2.jpg");
   background-size: cover;
@@ -531,7 +527,6 @@ hr {
 @media (max-width: 768px) {
   .swiper .swiper-container .swiper-slide img {
     height: 100%; } }
-
 .proj-details {
   font-family: Aduma;
   font-size: 1.5em;
@@ -685,3 +680,5 @@ hr {
         font-weight: lighter;
         font-size: 1.5em;
         line-height: 0em; }
+
+/*# sourceMappingURL=main.css.map */
