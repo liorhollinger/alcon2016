@@ -133,9 +133,68 @@ angular.module('myApp')
             {
                 id: 1,
                 name: 'alc10000',
-                imgs: [$sce.trustAsResourceUrl('https://www.youtube.com/embed/5paSQnG3fPY'), 'R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-
+                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
                 pdf: '10000C.pdf'
+            },{
+                id: 2,
+                name: 'alc500',
+                imgs: ['alc_500_alum_0000_S.jpg',
+                    'alc_500_alum_0001_S.jpg',
+                    'alc_500_blue_wood_0000_S.jpg',
+                    'alc_500_blue_wood_0001_S.jpg',
+                    'alc_500_pattern_wood_0000_S.jpg',
+                    'alc_500_pattern_wood_0001_S.jpg',
+                    'alc_500_sketch_0001_S.jpg',
+                    'alc_500_sketch_0002_S.jpg',
+                    'alc_500_white_general_0000.jpg',
+                    'alc_500_white_general_0001.jpg',
+                    'alc_500_white_general_0002.jpg',
+                    'alc_500_white_general_0003.jpg',
+                    'alc_500_white_general_0004.jpg',
+                    'alc_500_white_general_0005.jpg',
+                    'colors_wall_0000.jpg',
+                    'colors_wall_0001.jpg',
+                    'colors_wall_0002.jpg',
+                    'ikea_01.jpg',
+                    'ikea_02.jpg'],
+                pdf: 'alc_500.pdf'
+            },{
+                id: 3,
+                name: 'alc1170',
+                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+                pdf: 'alc_1170.pdf'
+            },{
+                id: 4,
+                name: 'alc4000',
+                imgs: ['ar_reg.jpg',
+                    'b_reg.jpg',
+                    'e_reg.jpg',
+                    'e_sg.jpg',
+                    'e_sg_nr.jpg',
+                    'e_ssg.jpg',
+                    'eb_reg.jpg',
+                    'eb_sg.jpg',
+                    'eb_sg_nr.jpg',
+                    'eb_ssg.jpg',
+                    'office.jpg',
+                    'office2.jpg',
+                    'office3.JPG'],
+                pdf: 'alc4000.pdf'
+            },{
+                id: 5,
+                name: 'alc9200',
+                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+                pdf: 'ALC_9200.pdf'
+            },{
+                id: 6,
+                name: 'alc9000',
+                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+                pdf: 'ALC_9000.pdf'
+            },{
+                id: 7,
+                name: 'alc7000',
+                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+                pdf: 'ALC_7000.pdf'
             }
         ];
 
@@ -157,7 +216,7 @@ angular.module('myApp')
             },
             getTech: function (id) {
                 var filteredProjs = techs.filter(function (tech) {
-                    return tech.id === +id;
+                    return tech.name === id;
                 });
                 return filteredProjs[0];
             },
