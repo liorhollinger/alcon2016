@@ -196,7 +196,7 @@ $navHeight: 133px;
     height: $navHeight;
     background-color: transparent;
     display: flex;
-    border-top: 3px solid $redBorder;
+    //border-top: 3px solid $redBorder;
 
 
     .menu {
@@ -326,7 +326,7 @@ $navHeight: 133px;
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
-    left: -22px;
+    left: -40px;
     top: -3px;
     width: 100%;
     height: $navHeight;
