@@ -272,10 +272,7 @@ footer {
     flex-wrap: wrap; }
     footer > div {
       width: 100%;
-      padding-bottom: 5vw;
-      padding-top: 5vw;
-      padding-right: 4vw;
-      padding-left: 6vw; }
+      padding: 5vw; }
       footer > div.companyName {
         text-align: center;
         border-bottom: 1px solid white; }
@@ -514,7 +511,7 @@ hr {
     background-color: #d52635; }
 
 .swiper .swiper-container {
-  height: 70vh; }
+  height: 100vh; }
   .swiper .swiper-container .swiper-button-prev {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
   .swiper .swiper-container .swiper-button-next {
@@ -525,8 +522,13 @@ hr {
     width: 100%; }
 
 @media (max-width: 768px) {
-  .swiper .swiper-container .swiper-slide img {
-    height: 100%; } }
+  .projectsPage a {
+    margin-left: 0; }
+
+  .swiper .swiper-container {
+    height: auto; }
+    .swiper .swiper-container .swiper-slide img {
+      height: 100%; } }
 .proj-details {
   font-family: Aduma;
   font-size: 1.5em;
@@ -550,7 +552,7 @@ hr {
   margin-bottom: 3vw;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%; }
   .contactCon .formCon {
     margin-bottom: 3vw; }
@@ -600,7 +602,7 @@ hr {
             width: auto; } }
         .contactCon .formCon .fields .flex-form .form-inputs input {
           height: 1.5em;
-          border: 3px solid #d52635;
+          border: 2px solid #d52635;
           background-color: transparent;
           outline: none;
           font-family: NextExit;
@@ -609,7 +611,11 @@ hr {
           line-height: 0em;
           padding: 5px; }
           .contactCon .formCon .fields .flex-form .form-inputs input:focus {
-            border: 3px solid white; }
+            border: 2px solid white; }
+          @media (max-width: 728px) {
+            .contactCon .formCon .fields .flex-form .form-inputs input {
+              margin-right: 10px;
+              width: 90vw; } }
         .contactCon .formCon .fields .flex-form .form-inputs ::-webkit-input-placeholder {
           /* Chrome/Opera/Safari */
           color: white; }
@@ -623,9 +629,8 @@ hr {
           /* Firefox 18- */
           color: white; }
       .contactCon .formCon .fields .flex-form .description-field textarea {
-        width: 22vw;
         height: 25vh;
-        border: 3px solid #d52635;
+        border: 2px solid #d52635;
         background-color: transparent;
         outline: none;
         font-family: NextExit;
@@ -635,10 +640,11 @@ hr {
         padding: 5px; }
         @media (max-width: 728px) {
           .contactCon .formCon .fields .flex-form .description-field textarea {
-            margin: 10px;
-            width: auto; } }
+            margin: 22px;
+            margin-bottom: 10px;
+            width: 90vw; } }
         .contactCon .formCon .fields .flex-form .description-field textarea:focus {
-          border: 3px solid white; }
+          border: 2px solid white; }
       .contactCon .formCon .fields .flex-form .description-field ::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
         color: white; }

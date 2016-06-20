@@ -38,7 +38,7 @@
   margin-bottom: 3vw;
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   width: 100%;
 
   .formCon {
@@ -116,7 +116,7 @@
           input {
             //width: 22vw;
             height: 1.5em;
-            border: 3px solid $redBorder;
+            border: 2px solid $redBorder;
             background-color: transparent;
             outline: none;
             font-family: NextExit;
@@ -126,7 +126,11 @@
             padding: 5px;
 
             &:focus {
-              border: 3px solid white;
+              border: 2px solid white;
+            }
+            @media (max-width: 728px) {
+              margin-right: 10px;
+              width: 90vw;
             }
 
           }
@@ -150,9 +154,9 @@
         }
         .description-field {
           textarea {
-            width: 22vw;
+            //width: 22vw;
             height: 25vh;
-            border: 3px solid $redBorder;
+            border: 2px solid $redBorder;
             background-color: transparent;
             outline: none;
             font-family: NextExit;
@@ -162,12 +166,14 @@
             padding: 5px;
 
             @media (max-width: 728px) {
-              margin: 10px;
-              width: auto;
+              margin: 22px;
+              margin-bottom: 10px;
+
+              width: 90vw;
             }
 
             &:focus {
-              border: 3px solid white;
+              border: 2px solid white;
             }
           }
           ::-webkit-input-placeholder {
