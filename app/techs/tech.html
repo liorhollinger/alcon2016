@@ -17,14 +17,8 @@
         <a href="pdfs/{{vm.tech.pdf}}" download>להורדת קטלוג</a>
     </p>
 </div>
-<section class="projectsPage2">
-    <a ng-href="#!/techs/{{tech.id}}" ng-repeat="tech in vm.techs"
-       ng-style="{'background-image':'url(img/tech/'+tech.name+'/1.jpg)'}">
-        <div class="projectName">{{tech.name}}</div>
-    </a>
 
-    <div class="projectName">{{tech.name}}</div>
-</section>
+<techs-list techs="vm.techs" is-preview="true"></techs-list>
 
 
 

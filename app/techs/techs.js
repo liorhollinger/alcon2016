@@ -7,7 +7,7 @@ angular.module('myApp.techs', ['ngRoute', 'ngAnimate'])
             templateUrl: 'techs/techs.html',
             controller: 'techsCtrl as vm'
         });
-        $routeProvider.when('/tech/:id', {
+        $routeProvider.when('/tech/:name', {
             templateUrl: 'techs/tech.html',
             controller: 'TechCtrl as vm'
         });
@@ -22,7 +22,7 @@ angular.module('myApp.techs', ['ngRoute', 'ngAnimate'])
     .controller('TechCtrl', ['$routeParams', 'DataFactory', '$rootScope', '$scope', function ($routeParams, DataFactory, $rootScope, $scope) {
         //console.log('$routeParams', $routeParams);
         this.techs = DataFactory.getTechs();
-        var route = ''+$routeParams.id;
+        var route = ''+$routeParams.name;
         this.tech = DataFactory.getTech(route);
 
         if (this.tech) {
@@ -41,4 +41,16 @@ angular.module('myApp.techs', ['ngRoute', 'ngAnimate'])
         $scope.$on('$destroy', function () {
             $rootScope.details = null;
         });
+    }]).directive('techsList', [function () {
+        return {
+            templateUrl: 'techs/techs-list.html',
+            restrict: 'E',
+            replace: true,
+            scope: {
+                techs: '=techs',
+                isPreview: '=isPreview'
+            },
+            link: function menuLink(scope, element, attrs) {
+            }
+        }
     }]);
