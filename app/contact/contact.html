@@ -4,47 +4,90 @@
 </div>
 
 <div class="contactCon">
+    <div class="message-success">
+תודה על פנייתך
+    </div>
+    <!--<div id="form-messages"></div>-->
     <div class="formCon">
         <div class="alconDec">
             <div>
                 <h1>אלומיניום קונסטרקשיין</h1>
+
                 <p>
                     רחוב אופירה 8, אזור תעשייה מישור אדומים. מיקוד: 98100, ישראל
                 </p>
+
                 <p>
                     טלפון: 02-5352581
                 </p>
+
                 <p>
                     פקס: 02-5354008
                 </p>
+
                 <p>
                     דוא"ל: alcon@alcon.co.il
                 </p>
             </div>
         </div>
         <div class="fields">
-
-            <form action="">
-
-
+            <form id="ajax-contact" method="post" action="server/mailer.php">
                 <div class="flex-form">
                     <div class="form-inputs">
-                        <input type="tel" name="telNumber" placeholder="טלפון" autofocus/>
-                        <input type="text" name="name" placeholder="שם "/>
-                        <input type="email " name="email " placeholder="דואל "/>
+                        <input type="tel" name="telNumber" id="tel" required placeholder="טלפון" autofocus/>
+                        <input type="text" name="name" id="name" required placeholder="שם "/>
+                        <input type="email" name="email" id="email" required pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})"
+                               placeholder='דוא"ל'/>
                     </div>
                     <div class="description-field">
-                        <textarea name="desc " id="desc " cols="30" rows="5" placeholder="הודעה"></textarea>
+                        <textarea name="message" id="message" required cols="30" rows="5" placeholder="הודעה"></textarea>
                     </div>
-
                 </div>
                 <div class="sendButtonCon">
                     <div class="tri"></div>
-                    <input type="submit">
+                    <input type="submit" value="שלח">
                 </div>
             </form>
-
         </div>
     </div>
-
 </div>
+
+
+<!--<div class="container">-->
+<!--<div>-->
+<!--<img src="img/robin_logo.png" class="logo">-->
+<!--</div>-->
+<!--<div class="message-success">-->
+<!--המייל נשלח בהצלחה-->
+<!--</div>-->
+<!--<div id="form-messages"></div>-->
+<!--<form class="col-xs-12" id="ajax-contact" method="post" action="mailer.php">-->
+<!--<div class="form-body">-->
+<!--<div class="form-header">-->
+<!--<div class="main-header">Contact Form</div>-->
+<!--<div class="header-gar"></div>-->
+<!--</div>-->
+<!--<div class="row">-->
+<!--<label for="name" class="col-xs-2">Name</label>-->
+<!--<input id="name" type="text" required class="col-xs-8" autofocus>-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<div class="row">-->
+<!--<label for="email" class="col-xs-2">E-mail</label>-->
+<!--<input id="email" type="email" required class="col-xs-8" pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})">-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<div class="row">-->
+<!--<label for="message" class="col-xs-2">Message</label>-->
+<!--<textarea id="message" required class="col-xs-9"></textarea>-->
+<!--</div>-->
+<!--<br>-->
+
+<!--<div class="submit-btn">-->
+<!--<button type="submit">Submit</button>-->
+<!--</div>-->
+<!--</div>-->
+<!--</form>-->
+<!--</div>-->

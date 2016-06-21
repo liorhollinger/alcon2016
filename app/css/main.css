@@ -563,8 +563,11 @@ hr {
   bottom: 0;
   right: 0;
   background-size: cover;
-  height: 1000vh;
+  height: 260vh;
   z-index: -1; }
+  @media (max-width: 728px) {
+    .backContact {
+      height: 300vh; } }
 
 .contactCon {
   margin-top: 220px;
@@ -573,6 +576,12 @@ hr {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%; }
+  .contactCon .message-success {
+    display: none;
+    text-align: center;
+    color: white;
+    font-size: 12vw;
+    font-family: Aduma; }
   .contactCon .formCon {
     margin-bottom: 3vw; }
     .contactCon .formCon .alconDec {
@@ -603,7 +612,7 @@ hr {
     .contactCon .formCon .fields .flex-form {
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
       color: white; }
       @media (max-width: 728px) {
         .contactCon .formCon .fields .flex-form {
