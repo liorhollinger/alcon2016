@@ -10,7 +10,9 @@ angular.module('myApp.home', ['ngRoute'])
 }])
 
 .controller('homeCtrl', ["DataFactory", function(DataFactory) {
-  this.projs = DataFactory.getProjs().slice(0, 3);
+  // array of 3 array in item
+  this.projs = _.chunk(DataFactory.getProjs(), 3);  
+  
 }]).directive('videoContainer', [function () {
     return {
       templateUrl: 'home/video-container.html',
