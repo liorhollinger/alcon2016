@@ -134,3 +134,43 @@ iframe.video {
     }
   }
 }
+
+.filler {
+  .swiper {
+    .swiper-container {
+      height: auto;
+
+      .swiper-button-prev {
+        transform: rotate(180deg);
+        background-image: $swiperPrevBtnDark;
+
+        @media (max-width: 435px) {
+          transform: rotate(0deg);
+          background-image: $swiperPrevBtnBright;
+          background-color: rgba(0,0,0,0.4);
+          height: 80px;
+          width: 50px;
+        }
+      }
+
+      .swiper-button-next {
+        transform: rotate(180deg);
+        left: 25px;
+        background-image: $swiperNextBtnDark;
+
+        @media (max-width: 435px) {
+          background-image: $swiperNextBtnBright;
+          background-color: rgba(0,0,0,0.4);
+          height: 80px;
+          width: 50px;
+        }
+      }
+
+      .swiper-slide {
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
