@@ -30,9 +30,9 @@
       font-weight: lighter;
       font-size: 2em;
 
-      li {
+      li {        
         display: inline-block;
-        padding: 10px;
+        padding: 10px 35px 0 35px;
         margin-left: 20px;
         z-index: 4;
         a {
@@ -186,6 +186,7 @@ $navHeight: 133px;
   flex-direction: row-reverse;
   z-index: 1030;
   width: 100%;
+  height: 130px;
   top: 40px;
   font-family: NextExit;
   font-weight: lighter;
@@ -215,7 +216,7 @@ $navHeight: 133px;
         font-size: 2em;
 
         li {
-          padding: 10px;
+          padding: 10px 35px 0 35px;
           border-top: 3px solid transparent;
 
           &:hover, &.active {
@@ -234,22 +235,24 @@ $navHeight: 133px;
 
   }
 
+
   .logo-wrapper {
     position: relative;
-    width: 10%;
-    height: $navHeight;
+    width: 200px;
+    height: auto;
     background-color: #fff;
     right: 0;
-    margin-left: 150px;
+    margin-left: 60px;
 
     a {
       transform: initial;
       z-index: 1030;
       right: 0;
+      width: 100%;
 
       img {
         margin-top: 16px;
-        width: 100%;
+        width: 150px;
         position: absolute;
         right: 25%;
       }
@@ -257,10 +260,10 @@ $navHeight: 133px;
 
   }
 
-  .logo {
+  .logo-corner {
+    z-index: -1;
     position: absolute;
-    left: -120px;
-    min-width: 150px;
+    left: -80px;
     width: 100%;
     height: 100%;
     background: #fff;
@@ -268,6 +271,17 @@ $navHeight: 133px;
     -moz-transform: skew(-30deg);
     -o-transform: skew(-30deg);
     transform: skew(-30deg);
+
+    /* IE8+ - must be on one line, unfortunately */ 
+   -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=-0.5773502691896246, M21=-0.5773502691896246, M22=1, SizingMethod='auto expand')";
+   
+   /* IE6 and 7 */ 
+   filter: progid:DXImageTransform.Microsoft.Matrix(
+            M11=1,
+            M12=-0.5773502691896246,
+            M21=-0.5773502691896246,
+            M22=1,
+            SizingMethod='auto expand');
   }
 
   .details {
