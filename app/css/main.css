@@ -3,19 +3,16 @@
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/Aduma-Light.woff") format("woff"), url("../fonts/Aduma-Light.woff2") format("woff2"); }
-
 @font-face {
   font-family: Aduma;
   font-weight: bold;
   font-style: normal;
   src: url("../fonts/Aduma-Bold.woff") format("woff"), url("../fonts/Aduma-Bold.woff2") format("woff2"); }
-
 @font-face {
   font-family: NextExit;
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/NextExit-Light.woff") format("woff"), url("../fonts/Aduma-Light.woff2") format("woff2"); }
-
 html, body {
   width: 100%;
   margin: 0;
@@ -92,7 +89,6 @@ body {
   .menuCon .contLeft {
     width: 80%;
     color: red; } }
-
 .navConBoot {
   display: none; }
   .navConBoot .navbar-default {
@@ -103,31 +99,29 @@ body {
 @media (max-width: 768px) {
   .navConBoot {
     display: inherit; }
+
   .menuCon {
     display: none; }
+
   .nav-wrapper {
     top: 0; }
+
   .menu-wrapper, .logo-wrapper {
     display: none !important; } }
-
 @media (max-width: 1280px) {
   .nav-wrapper .details .menu-corner {
     left: -88px !important; }
     .nav-wrapper .details .menu-corner .content {
       padding-left: 115px !important; } }
-
 @media (max-width: 1460px) {
   .nav-wrapper .logo {
     left: -120px !important; } }
-
 @media (max-width: 1280px) {
   .nav-wrapper .logo {
     left: -145px !important; } }
-
 @media (max-width: 1280px) {
   .nav-wrapper .logo {
     left: -160px !important; } }
-
 .nav-wrapper {
   display: flex;
   position: absolute;
@@ -269,6 +263,24 @@ footer {
     min-width: 320px;
     font-size: 1.5em;
     font-family: NextExit; }
+    footer .address div {
+      display: flex; }
+      footer .address div .iconsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; }
+        footer .address div .iconsContainer a {
+          height: 1.2em;
+          width: 1.2em;
+          padding: 2px;
+          background-size: cover; }
+          footer .address div .iconsContainer a.google {
+            background-image: url("../img/home/G+.png"); }
+          footer .address div .iconsContainer a.linkedIn {
+            background-image: url("../img/home/in.png"); }
+          footer .address div .iconsContainer a.facebook {
+            background-image: url("../img/home/F.png"); }
     footer .address a {
       text-decoration: none;
       color: inherit; }
@@ -288,7 +300,6 @@ footer {
       footer > div.address {
         text-align: center;
         border-left: none; } }
-
 .video-container {
   width: 100%;
   position: relative; }
@@ -325,6 +336,8 @@ iframe.video {
   position: relative; }
   .info .homeName {
     padding: 0.6em;
+    padding-left: 7vw;
+    padding-right: 3vw;
     font-size: 3.5em;
     font-family: Aduma;
     line-height: 50%; }
@@ -355,8 +368,7 @@ iframe.video {
   align-items: center;
   justify-content: space-around;
   color: #D62439;
-  padding: 2em;
-  padding-top: 0;
+  padding: 0 1.8vw 2em 4.2vw;
   font-family: NextExit; }
   .stats article {
     text-align: center;
@@ -377,13 +389,15 @@ iframe.video {
     .info .homeName {
       text-align: center;
       font-size: 10vw; }
+
   .stats {
-    flex-direction: column; }
+    flex-direction: column;
+    padding: 2em;
+    padding-right: 0.75em; }
     .stats article {
       border-bottom: 1px #D62439 solid; }
     .stats .separator {
       display: none; } }
-
 .filler .swiper .swiper-container {
   height: auto; }
   .filler .swiper .swiper-container .swiper-button-prev {
@@ -440,17 +454,16 @@ hr {
     font-size: 3.5vw; }
     .aboutContainer h2 {
       font-size: 5.5vw; } }
-
 @media (max-width: 500px) {
   .projBack {
     height: 25vh !important; }
+
   .aboutContainer {
     font-size: 5vw; }
     .aboutContainer h2 {
       font-weight: bold; }
     .aboutContainer p {
       margin: 0 0 5vw 0; } }
-
 .projBack {
   background-image: url("../img/proj/header2.jpg");
   background-size: cover;
@@ -572,15 +585,17 @@ hr {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
   .swiper .swiper-container .swiper-slide img {
     width: 100%; }
+.swiper iframe {
+  height: 100vh; }
 
 @media (max-width: 768px) {
   .projectsPage a {
     margin-left: 0; }
+
   .swiper .swiper-container {
     height: auto; }
     .swiper .swiper-container .swiper-slide img {
       height: 100%; } }
-
 .proj-details {
   font-family: Aduma;
   font-size: 1.5em;
@@ -600,7 +615,7 @@ hr {
   z-index: -1; }
   @media (max-width: 728px) {
     .backContact {
-      height: 300vh; } }
+      height: 500vh; } }
 
 .contactCon {
   margin-top: 220px;
@@ -752,3 +767,5 @@ hr {
         font-weight: lighter;
         font-size: 1.5em;
         line-height: 0em; }
+
+/*# sourceMappingURL=main.css.map */

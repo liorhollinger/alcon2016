@@ -55,6 +55,8 @@ iframe.video {
   position: relative;
   .homeName {
     padding: 0.6em;
+    padding-left: 7vw;
+    padding-right: 3vw;
     font-size: 3.5em;
     font-family: Aduma;
     line-height: 50%;
@@ -92,8 +94,8 @@ iframe.video {
   align-items: center;
   justify-content: space-around;
   color: #D62439;
-  padding: 2em;
-  padding-top: 0;
+  padding: 0 1.8vw 2em 4.2vw;
+  //padding-top: 0;
   font-family: NextExit;
   article {
     text-align: center;
@@ -126,6 +128,8 @@ iframe.video {
 
   .stats {
     flex-direction: column;
+    padding: 2em;
+    padding-right: 0.75em;
     article{
       border-bottom: 1px #D62439 solid;
     }

@@ -41,14 +41,20 @@
         <span>אדריכל: {{vm.proj.architects}}</span>
     </h1>
 </div>
-<section class="projectsPage">
-    <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in vm.projs"
-       ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
-        <div class="projectName">{{proj.name}}</div>
-    </a>
 
-    <div class="projectName">{{proj.name}}</div>
-</section>
+<div class="filler">
+    <div class="swiper">
+        <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0" pagination-clickable="true">
+            <ks-swiper-slide class="swiper-slide" ng-repeat="projs in vm.projs2">
+                <section class="projectsPage">
+                    <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
+                        <div class="projectName">{{proj.name}}</div>
+                    </a>
+                </section>
+            </ks-swiper-slide>
+        </ks-swiper-container>
+    </div>
+</div>
 <!--<img src="img/proj/101/101-1.jpg">-->
 
 

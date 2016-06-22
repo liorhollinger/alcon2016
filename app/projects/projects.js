@@ -43,6 +43,6 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
             $rootScope.details = null;
         });
 
-
+        this.projs2 = _.chunk(DataFactory.getProjs(), 3);
 
     }]);

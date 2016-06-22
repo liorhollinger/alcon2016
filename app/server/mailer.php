@@ -15,12 +15,14 @@
             exit;
         }
 
+        //TODO:change from & recipient
+
         $recipient = "liorhollinger@gmail.com";
 
         $subject = "New contact from $name";
 
-        $email_content = "TEL: $tel\n";
         $email_content = "Name: $name\n";
+        $email_content .= "Telephone: $tel\n";
         $email_content .= "Email: $email\n\n";
         $email_content .= "Message:\n$message\n";
 
