@@ -4,8 +4,8 @@
   //$height: percentage(nth(16 9, 2) / nth(16 9, 1));
   //height: 0;
   //padding-bottom: $height;
-  @media (max-width :320px) {
-    margin-top: 53px;// nav-bar
+  @media (max-width: 320px) {
+    margin-top: 53px; // nav-bar
   }
 
   video {
@@ -21,7 +21,7 @@
     top: 40%;
     left: 50%;
 
-    @media (max-width :320px) {
+    @media (max-width: 320px) {
       left: 40%;
       top: 25%;
     }
@@ -32,8 +32,6 @@
     }
   }
 }
-
-
 
 iframe.video {
   width: 100vw;
@@ -60,7 +58,7 @@ iframe.video {
     font-size: 3.5em;
     font-family: Aduma;
     line-height: 50%;
-    .companyName{
+    .companyName {
       display: flex;
       flex-flow: row nowrap;
     }
@@ -87,56 +85,63 @@ iframe.video {
   }
 }
 
-.stats {
+.statsCon {
   width: 100vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  color: #D62439;
-  padding: 0 1.8vw 2em 4.2vw;
-  //padding-top: 0;
-  font-family: NextExit;
-  article {
-    text-align: center;
-    font-weight: 800;
+  justify-content: center;
+  .stats {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #D62439;
+    padding: 2em;
+    padding-top: 0;
+    font-family: NextExit;
+    article {
+      text-align: center;
+      font-weight: 800;
 
-    div:first-child {
-      font-size: 6em;
-      line-height: 100%;
-    }
-    div:nth-child(2) {
-      font-size: 2em;
+      div:first-child {
+        font-size: 5em;
+        line-height: 100%;
+      }
+      div:nth-child(2) {
+        font-size: 1.8em;
 
+      }
     }
-  }
-  .separator {
-    font-size: 13em;
-    font-weight: -100;
+    .separator {
+      font-size: 13em;
+      font-weight: -100;
+    }
   }
 }
 
 @media (max-width: 1000px) {
-  .info{
+  .info {
     flex-direction: column;
     align-items: center;
-    .homeName{
+    .homeName {
       text-align: center;
       font-size: 10vw;
     }
   }
-
-  .stats {
+  .statsCon{.stats {
     flex-direction: column;
     padding: 2em;
-    padding-right: 0.75em;
-    article{
+    //padding-right: 0.75em;
+    article {
       border-bottom: 1px #D62439 solid;
     }
     .separator {
       display: none;
     }
-  }
+  }}
+
 }
 
 .filler {
@@ -151,7 +156,7 @@ iframe.video {
         @media (max-width: 435px) {
           transform: rotate(0deg);
           background-image: $swiperPrevBtnBright;
-          background-color: rgba(0,0,0,0.4);
+          background-color: rgba(0, 0, 0, 0.4);
           height: 80px;
           width: 50px;
         }
@@ -164,7 +169,7 @@ iframe.video {
 
         @media (max-width: 435px) {
           background-image: $swiperNextBtnBright;
-          background-color: rgba(0,0,0,0.4);
+          background-color: rgba(0, 0, 0, 0.4);
           height: 80px;
           width: 50px;
         }

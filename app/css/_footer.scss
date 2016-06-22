@@ -37,7 +37,7 @@ footer {
         display: flex;
         //position: absolute;
         align-items: center;
-        justify-content: space-between;
+
         width: 100%;
         //height: 4em;
         a {
@@ -90,6 +90,11 @@ footer {
       &.address {
         text-align: center;
         border-left: none;
+        div{
+          .iconsContainer {
+            justify-content: center;
+          }
+        }
       }
 
     }
