@@ -1,5 +1,5 @@
-<section ng-class="{projectsPage2: isPreview, projectsPage: !isPreview}">
-    <a ng-href="#!/tech/{{tech.name}}" ng-repeat="tech in techs"
+<section  ng-class="{projectsPage2: isPreview, projectsPage: !isPreview}">
+    <a class="tech"  ng-href="#!/tech/{{tech.name}}" ng-repeat="tech in techs"
        ng-style="{'background-image':'url(img/tech/'+tech.name+'/preview.jpg)'}">
         <div class="projectName">{{tech.name}}</div>
     </a>
