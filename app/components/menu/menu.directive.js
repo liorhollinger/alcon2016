@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('myApp.directives', [])
+angular.module('myApp.directives')
     .directive('menu', ['$location', function ($location) {
         return {
             templateUrl: 'components/menu/menu.html',

@@ -255,8 +255,6 @@ angular.module('myApp')
             }
         ];
 
-        console.log('techs', techs);
-
 
         return {
             getProjs: function () {
