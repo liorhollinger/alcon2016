@@ -518,8 +518,9 @@ hr {
     justify-content: center;
     text-decoration: none; }
     .projectsPage a.tech {
-      width: 220px;
-      height: 220px; }
+      width: 250px;
+      height: 250px;
+      background-size: 100% 100%; }
     .projectsPage a .projectName {
       display: flex;
       width: 100%;
