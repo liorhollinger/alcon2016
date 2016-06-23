@@ -21,7 +21,7 @@ angular.module('myApp.techs', ['ngRoute', 'ngAnimate'])
 
     .controller('TechCtrl', ['$routeParams', 'DataFactory', '$rootScope', '$scope', function ($routeParams, DataFactory, $rootScope, $scope) {
         //console.log('$routeParams', $routeParams);
-        this.techs = DataFactory.getTechs();
+        this.techs = _.chunk(DataFactory.getTechs(), 3);
         var route = ''+$routeParams.name;
         this.tech = DataFactory.getTech(route);
 
