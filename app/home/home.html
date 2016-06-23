@@ -1,4 +1,6 @@
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/WaUgIIySmL4?modestbranding=1&autohide=1&showinfo=0&autoplay=1" frameborder="0"
+<iframe width="100%" height="auto"
+        src="https://www.youtube.com/embed/WaUgIIySmL4?modestbranding=1&autohide=1&showinfo=0&autoplay=1"
+        frameborder="0"
         allowfullscreen class="video" ng-if="vm.userPlay"></iframe>
 
 <div class="videoBg" ng-if="!vm.userPlay" ng-click="vm.userPlayed()"></div>
@@ -12,6 +14,7 @@
             <div>קונסטרקשיין</div>
         </div>
         <br/>
+
         <div><b>מכל הסיבות </b></div>
     </div>
     <div class="bullets">
@@ -31,10 +34,12 @@
 </div>
 
 <alcon-swiper>
-    <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0" pagination-clickable="true">
+    <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0"
+                         pagination-clickable="true">
         <ks-swiper-slide class="swiper-slide" ng-repeat="projs in vm.projs">
             <section class="projectsPage">
-                <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
+                <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs"
+                   ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
 
                     <div class="projectName">{{proj.name}}</div>
 
@@ -62,26 +67,26 @@
 
 
 <div class="statsCon">
-<section class="stats">
-    <article>
-        <div>1987</div>
-        <div>שנת הקמה</div>
-    </article>
-    <div class="separator">/</div>
-    <article>
-        <div>58</div>
-        <div>קירות מסך</div>
-    </article>
-    <div class="separator">/</div>
-    <article>
-        <div>300</div>
-        <div>עובדים</div>
-    </article>
-    <div class="separator">/</div>
-    <article>
-        <div>100%</div>
-        <div>הצלחה</div>
-    </article>
+    <section class="stats">
+        <article>
+            <div>1987</div>
+            <div>שנת הקמה</div>
+        </article>
+        <div class="separator">/</div>
+        <article>
+            <div>58</div>
+            <div>קירות מסך</div>
+        </article>
+        <div class="separator">/</div>
+        <article>
+            <div>300</div>
+            <div>עובדים</div>
+        </article>
+        <div class="separator">/</div>
+        <article>
+            <div>100%</div>
+            <div>הצלחה</div>
+        </article>
 
-</section>
+    </section>
 </div>

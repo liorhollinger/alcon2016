@@ -136,7 +136,7 @@
             font-weight: lighter;
             font-size: 1.5em;
             line-height: 0em;
-            padding: 5px;
+            padding-right: 5px;
 
             &:focus {
               border: 2px solid white;
@@ -176,7 +176,7 @@
             font-weight: lighter;
             font-size: 1.5em;
             line-height: 1em;
-            padding: 5px;
+            padding-right: 5px;
 
             @media (max-width: 728px) {
               margin: 22px;
