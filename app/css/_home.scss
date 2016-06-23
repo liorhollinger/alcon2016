@@ -183,3 +183,14 @@ iframe.video {
     }
   }
 }
+
+.videoBg{
+  width: 100vw;
+  height: 100vh;
+  //position: absolute;
+  top: 0;
+  z-index: 0;
+  //background-color: #000066;
+  background-image: url("../img/home/video2.jpg");
+  background-size: 100% 100%;
+}

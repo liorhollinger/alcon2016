@@ -1,6 +1,7 @@
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/WaUgIIySmL4?modestbranding=1&autohide=1&showinfo=0" frameborder="0"
-        allowfullscreen class="video"></iframe>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/WaUgIIySmL4?modestbranding=1&autohide=1&showinfo=0&autoplay=1" frameborder="0"
+        allowfullscreen class="video" ng-if="vm.userPlay"></iframe>
 
+<div class="videoBg" ng-if="!vm.userPlay" ng-click="vm.userPlayed()"></div>
 <!--<video-container></video-container>-->
 
 <div class="info">
