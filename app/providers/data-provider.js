@@ -190,7 +190,7 @@ angular.module('myApp')
             {
                 id: 1,
                 name: 'alc10000',
-                imgs: [$sce.trustAsResourceUrl('https://www.youtube.com/embed/5paSQnG3fPY'), 'R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+                imgs: [$sce.trustAsResourceUrl('https://www.youtube.com/embed/5paSQnG3fPY?modestbranding=1&autohide=1&showinfo=0'), 'R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
                 pdf: '10000C.pdf'
             },{
                 id: 2,

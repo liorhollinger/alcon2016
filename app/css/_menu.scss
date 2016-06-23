@@ -187,7 +187,7 @@ $navHeight: 133px;
   z-index: 1030;
   width: 100%;
   height: 130px;
-  top: 40px;
+  top: 30px;
   font-family: NextExit;
   font-weight: lighter;
 
@@ -213,7 +213,7 @@ $navHeight: 133px;
         display: flex;
         justify-content: space-between;
         margin-top: -3px;
-        font-size: 2em;
+        font-size: 1.6em;
 
         li {
           padding: 10px 35px 0 35px;
@@ -221,6 +221,10 @@ $navHeight: 133px;
 
           &:hover, &.active {
             border-top-color: #fff;
+          }
+
+          &:last-child {
+            padding-left: 10px;
           }
 
           a {
