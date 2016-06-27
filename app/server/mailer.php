@@ -2,7 +2,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = strip_tags(trim($_POST["name"]));
-        $tel = strip_tags(trim($_POST["telNumber"]));
+        $tel = strip_tags(trim($_POST["tel"]));
 
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
         $message = trim($_POST["message"]);
@@ -31,15 +31,15 @@
 
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "???? ?? ??????.";
         } else {
             http_response_code(500);
-            echo "Oops! Something went wrong and we couldn't send your message.";
+            echo "???????, ??? ???? ????? ?? ????.";
         }
 
     } else {
         http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "??? ????? ?????? ??????, ??? ??? ????";
     }
 
 ?>

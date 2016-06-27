@@ -16,12 +16,35 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
 
     .controller('projectsCtrl', ['DataFactory', function (DataFactory) {
         //console.log('DataFactory:', DataFactory);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.projs = DataFactory.getProjs();
     }])
 
     .controller('ProjCtrl', ['$routeParams', 'DataFactory', '$rootScope', '$scope', function ($routeParams, DataFactory, $rootScope, $scope) {
         //console.log('$routeParams', $routeParams);
-        this.projs = DataFactory.getProjs().slice(0,3);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+        var howManySlides = Math.floor(window.innerWidth / 440);
+        if (howManySlides <= 0){
+            howManySlides = 1;
+        }
+
+        //switch(w) {
+        //    case  <= 500:
+        //        this.howManySlides = 1;
+        //        break;
+        //    case w >= 700:
+        //        this.howManySlides = 2;
+        //        break;
+        //    case w >= 900:
+        //        this.howManySlides = 5;
+        //        break;
+        //    //default: this.howManySlides = 6;
+        //
+        //}
+
+
+        this.projs = DataFactory.getProjs().slice(0,howManySlides);
         var route = ''+$routeParams.id;
         this.proj = DataFactory.getProj(route);
         if (this.proj) {
@@ -32,7 +55,7 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
         this.imgNum = 0;
         this.curentImg = this.projimgs[this.imgNum];
         this.swipe = function(value){
-            if(value === -1 && this.imgNum === 0 || value === 1 && this.imgNum >= this.projimgs.length-1  ) return
+            if(value === -1 && this.imgNum === 0 || value === 1 && this.imgNum >= this.projimgs.length-1  ) return;
             this.imgNum += value;
             this.curentImg = this.projimgs[this.imgNum];
         };
@@ -43,6 +66,6 @@ angular.module('myApp.projects', ['ngRoute', 'ngAnimate'])
             $rootScope.details = null;
         });
 
-        this.projs2 = _.chunk(DataFactory.getProjs(), 3);
+        this.projs2 = _.chunk(DataFactory.getProjs(), howManySlides);
 
     }]);

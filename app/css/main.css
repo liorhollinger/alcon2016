@@ -158,6 +158,8 @@ body {
             border-top-color: #fff; }
           .nav-wrapper .menu-wrapper .menu ul li:last-child {
             padding-left: 20px; }
+            .nav-wrapper .menu-wrapper .menu ul li:last-child span {
+              font-size: 0.8em; }
           .nav-wrapper .menu-wrapper .menu ul li a {
             color: #fff;
             text-decoration: none; }
@@ -614,23 +616,25 @@ hr {
     transform: rotate(180deg);
     left: 25px;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E"); }
-  .swiper .swiper-container .swiper-slide img {
-    width: 100%;
-    height: 100%; }
-    @media (max-width: 768px) {
-      .swiper .swiper-container .swiper-slide img {
-        height: 100vh !important; } }
+  .swiper .swiper-container .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%; }
+    .swiper .swiper-container .swiper-slide img {
+      width: auto;
+      height: 100%; }
+      @media (max-width: 768px) {
+        .swiper .swiper-container .swiper-slide img {
+          width: 100% !important;
+          height: auto !important; } }
 .swiper iframe {
   height: 100vh; }
 
 @media (max-width: 768px) {
   .projectsPage a {
-    margin-left: 0; }
-
-  .swiper .swiper-container {
-    height: auto; }
-    .swiper .swiper-container .swiper-slide img {
-      height: 100%; } }
+    margin-left: 0; } }
 .proj-details {
   font-family: Aduma;
   font-size: 1.5em;
@@ -656,7 +660,15 @@ hr {
   margin-top: 220px;
   margin-bottom: 3vw;
   display: flex;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
   justify-content: center;
+  -webkit-justify-content: center;
   background-color: rgba(0, 0, 0, 0.6);
   width: 100%; }
   .contactCon .message-success {
@@ -669,8 +681,18 @@ hr {
     margin-bottom: 3vw; }
     .contactCon .formCon .alconDec {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
       flex-direction: row;
+      -webkit-flex-direction: row;
+      /* Safari 6.1+ */
       justify-content: center;
+      -webkit-justify-content: center;
       color: white; }
       .contactCon .formCon .alconDec div {
         width: 45vw;
@@ -688,45 +710,83 @@ hr {
           font-family: NextExit;
           line-height: 150%;
           display: flex;
+          display: -webkit-box;
+          /* OLD - iOS 6-, Safari 3.1-6 */
+          display: -moz-box;
+          /* OLD - Firefox 19- (buggy but mostly works) */
+          display: -ms-flexbox;
+          /* TWEENER - IE 10 */
+          display: -webkit-flex;
           flex-wrap: nowrap;
+          -webkit-flex-wrap: nowrap;
+          /* Safari 6.1+ */
           margin: 0; }
       .contactCon .formCon .alconDec .fields {
         margin-bottom: 3vw; }
     .contactCon .formCon .fields .flex-form {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
       flex-direction: row;
+      -webkit-flex-direction: row;
+      /* Safari 6.1+ */
       justify-content: space-between;
-      color: white; }
+      -webkit-justify-content: space-between;
+      color: white;
+      height: 200px;
+      padding: 5px; }
       @media (max-width: 728px) {
         .contactCon .formCon .fields .flex-form {
-          flex-direction: column; } }
+          flex-direction: column;
+          -webkit-flex-direction: column;
+          /* Safari 6.1+ */
+          height: auto;
+          width: 100vw;
+          padding-right: 15px;
+          padding-left: 15px; } }
       .contactCon .formCon .fields .flex-form .form-inputs {
         display: flex;
+        display: -webkit-box;
+        /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;
+        /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        display: -webkit-flex;
         flex-direction: column;
+        -webkit-flex-direction: column;
+        /* Safari 6.1+ */
         justify-content: space-between;
-        width: 22vw;
-        height: 25vh;
+        -webkit-justify-content: space-between;
+        width: 300px;
+        height: 100%;
         padding-left: 2em; }
         @media (max-width: 728px) {
           .contactCon .formCon .fields .flex-form .form-inputs {
-            margin-right: 10px;
-            width: auto; } }
+            width: auto;
+            padding-left: 0;
+            padding-bottom: 10px;
+            height: 200px; } }
         .contactCon .formCon .fields .flex-form .form-inputs input {
-          height: 1.5em;
           border: 2px solid #d52635;
           background-color: transparent;
           outline: none;
           font-family: NextExit;
           font-weight: lighter;
           font-size: 1.5em;
-          line-height: 0em;
+          line-height: 1em;
           padding-right: 5px; }
           .contactCon .formCon .fields .flex-form .form-inputs input:focus {
             border: 2px solid white; }
           @media (max-width: 728px) {
             .contactCon .formCon .fields .flex-form .form-inputs input {
-              margin-right: 10px;
-              width: 90vw; } }
+              width: 100%;
+              margin-bottom: 1em; } }
         .contactCon .formCon .fields .flex-form .form-inputs ::-webkit-input-placeholder {
           /* Chrome/Opera/Safari */
           color: white; }
@@ -740,7 +800,7 @@ hr {
           /* Firefox 18- */
           color: white; }
       .contactCon .formCon .fields .flex-form .description-field textarea {
-        height: 25vh;
+        height: 100%;
         border: 2px solid #d52635;
         background-color: transparent;
         outline: none;
@@ -751,9 +811,8 @@ hr {
         padding-right: 5px; }
         @media (max-width: 728px) {
           .contactCon .formCon .fields .flex-form .description-field textarea {
-            margin: 22px;
             margin-bottom: 10px;
-            width: 90vw; } }
+            width: 100%; } }
         .contactCon .formCon .fields .flex-form .description-field textarea:focus {
           border: 2px solid white; }
       .contactCon .formCon .fields .flex-form .description-field ::-webkit-input-placeholder {
@@ -770,14 +829,21 @@ hr {
         color: white; }
     .contactCon .formCon .fields .sendButtonCon {
       display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
       justify-content: flex-end;
+      -webkit-justify-content: flex-end;
       padding-top: 3px;
       padding-bottom: 3px; }
       @media (max-width: 728px) {
         .contactCon .formCon .fields .sendButtonCon {
-          margin: 22px;
-          margin-top: 0;
-          width: 90vw; } }
+          padding-left: 10px;
+          width: 100vw; } }
       .contactCon .formCon .fields .sendButtonCon .tri {
         width: 2em;
         background-color: #d52635;
@@ -793,7 +859,7 @@ hr {
       .contactCon .formCon .fields .sendButtonCon input {
         position: relative;
         z-index: 2;
-        left: 25px;
+        left: 26px;
         background-color: #d52635;
         border: none;
         color: white;
@@ -801,6 +867,6 @@ hr {
         font-family: NextExit;
         font-weight: lighter;
         font-size: 1.5em;
-        line-height: 0em; }
+        line-height: 0; }
 
 /*# sourceMappingURL=main.css.map */

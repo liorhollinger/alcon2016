@@ -2,14 +2,25 @@
 
 angular.module('myApp.contact', ['ngRoute'])
 
-    .config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.when('/contact', {
             templateUrl: 'contact/contact.html',
             controller: 'ContactCtrl as vm'
         });
     }])
 
-    .controller('ContactCtrl', [function() {
+    .controller('ContactCtrl', [function () {
+
+        if (window.innerWidth <= 500) {
+            var elelist = document.getElementsByTagName("input");
+            for (var i = 0; i < elelist.length; i++) {
+                elelist[i].addEventListener("focus", function () {
+                    this.blur();
+                });
+            }
+        }
+
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
 
         $(function () {
 
@@ -59,7 +70,7 @@ angular.module('myApp.contact', ['ngRoute'])
                         if (data.responseText !== '') {
                             $(formMessages).text(data.responseText);
                         } else {
-                            $(formMessages).text('Oops! An error occured and your message could not be sent.');
+                            $(formMessages).text('???????, ??? ???? ????? ?? ????.');
                         }
                     });
 

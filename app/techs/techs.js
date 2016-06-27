@@ -16,11 +16,13 @@ angular.module('myApp.techs', ['ngRoute', 'ngAnimate'])
 
     .controller('techsCtrl', ['DataFactory', function (DataFactory) {
         //console.log('DataFactory:', DataFactory);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.techs = DataFactory.getTechs();
     }])
 
     .controller('TechCtrl', ['$routeParams', 'DataFactory', '$rootScope', '$scope', function ($routeParams, DataFactory, $rootScope, $scope) {
         //console.log('$routeParams', $routeParams);
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.techs = _.chunk(DataFactory.getTechs(), 3);
         var route = ''+$routeParams.name;
         this.tech = DataFactory.getTech(route);

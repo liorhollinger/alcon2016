@@ -10,13 +10,18 @@ angular.module('myApp.home', ['ngRoute'])
     }])
 
     .controller('homeCtrl', ["DataFactory", function (DataFactory) {
-
-        this.userPlayed = function(){
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
+        this.userPlayed = function () {
             this.userPlay = true;
         };
 
+        var howManySlides = Math.floor(window.innerWidth / 440);
+        if (howManySlides <= 0){
+            howManySlides = 1;
+        }
         // array of 3 array in item
-        this.projs = _.chunk(DataFactory.getProjs(), 3);
+        this.projs = _.chunk(DataFactory.getProjs(), howManySlides);
+
 
     }]).directive('videoContainer', [function () {
         return {

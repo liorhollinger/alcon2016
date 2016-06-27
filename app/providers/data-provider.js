@@ -28,6 +28,13 @@ angular.module('myApp')
 
         var projs = [
             {
+                id: 'sarona',
+                name: 'מגדל שרונה',
+                developer: 'קבוצת עזריאלי',
+                architects: 'משה צור אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+            },
+            {
                 id: 'platinumTower',
                 name: 'מגדל פלטינום',
                 developer: 'אמות השקעות בע"מ',
@@ -173,15 +180,7 @@ angular.module('myApp')
                 developer: 'קבוצת עזריאלי',
                 architects: 'אד\' דוד עזריאלי, יגאל צמיר, יעל אוקו אדריכלים',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
-            },
-            {
-                id: 'matamHifa',
-                name: 'מת"מ חיפה',
-                developer: 'חברת גב ים',
-                architects: 'משה צור אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg']
             }
-
 
         ];
 
@@ -215,12 +214,14 @@ angular.module('myApp')
                     'ikea_01.jpg',
                     'ikea_02.jpg'],
                 pdf: 'alc_500.pdf'
-            },{
-                id: 3,
-                name: 'alc1170',
-                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-                pdf: 'alc_1170.pdf'
-            },{
+            },
+            //{
+            //    id: 3,
+            //    name: 'alc1170',
+            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+            //    pdf: 'alc_1170.pdf'
+            //},
+            {
                 id: 4,
                 name: 'alc4000',
                 imgs: ['ar_reg.jpg',
@@ -237,22 +238,23 @@ angular.module('myApp')
                     'office2.jpg',
                     'office3.JPG'],
                 pdf: 'alc4000.pdf'
-            },{
-                id: 5,
-                name: 'alc9200',
-                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-                pdf: 'ALC_9200.pdf'
-            },{
-                id: 6,
-                name: 'alc9000',
-                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-                pdf: 'ALC_9000.pdf'
-            },{
-                id: 7,
-                name: 'alc7000',
-                imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-                pdf: 'ALC_7000.pdf'
             }
+            //{
+            //    id: 5,
+            //    name: 'alc9200',
+            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+            //    pdf: 'ALC_9200.pdf'
+            //},{
+            //    id: 6,
+            //    name: 'alc9000',
+            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+            //    pdf: 'ALC_9000.pdf'
+            //},{
+            //    id: 7,
+            //    name: 'alc7000',
+            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
+            //    pdf: 'ALC_7000.pdf'
+            //}
         ];
 
 
