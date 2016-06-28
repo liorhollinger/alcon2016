@@ -151,7 +151,7 @@ gulp.task('sass:watch', function () {
 // Define the default task as a sequence of the above tasks
 gulp.task('prod', ['clean', 'libScripts', 'scripts', 'cssLibs','angularTpls', 'copy']);
 
-gulp.task('dev', ['angularTpls_dev']);
+gulp.task('dev', ['angularTpls_dev', 'html:watch']);
 gulp.task('html:watch', function () {
     gulp.watch(paths.angularTemplates, {cwd: bases.app}, ['dev']);
 });

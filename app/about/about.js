@@ -12,6 +12,7 @@ angular.module('myApp.about', ['ngRoute'])
     }])
 
     .controller('AboutCtrl',['DataFactory',  function (DataFactory) {
+        document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.staff = DataFactory.getStaff();
         console.log(this.staff);
     }]);

@@ -11,13 +11,9 @@ angular.module('myApp.contact', ['ngRoute'])
 
     .controller('ContactCtrl', [function () {
 
-        if (window.innerWidth <= 500) {
+        if (window.innerWidth >= 700) {
             var elelist = document.getElementsByTagName("input");
-            for (var i = 0; i < elelist.length; i++) {
-                elelist[i].addEventListener("focus", function () {
-                    this.blur();
-                });
-            }
+            elelist[1].focus();
         }
 
         document.body.scrollTop = document.documentElement.scrollTop = 0;

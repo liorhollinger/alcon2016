@@ -33,6 +33,12 @@ angular.module('myApp')
                 developer: 'קבוצת עזריאלי',
                 architects: 'משה צור אדריכלים',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+            },{
+                id: 'amot',
+                name: 'מגדל אמות אטריום',
+                developer: 'אמות השקעות בע"מ',
+                architects: 'משה צור אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
             },
             {
                 id: 'platinumTower',
@@ -82,6 +88,13 @@ angular.module('myApp')
                 developer: 'גינדי',
                 architects: 'רוני זיס אדריכלים',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg']
+            },
+            {
+                id: 'veredTower',
+                name: 'מגדל הוורד',
+                developer: 'ישראלום נכסים',
+                architects: 'בן פלג אדרכילים צפריר גנני',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
             },
             {
                 id: 'concordTower',
