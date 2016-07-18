@@ -442,11 +442,21 @@ iframe.video {
 
 .videoBg {
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   top: 0;
   z-index: 0;
   background-image: url("../img/home/video2.jpg");
   background-size: 100% 100%; }
+
+.aboutBack {
+  background-image: url("../img/bg/about.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  top: 0;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .aboutContainer {
   direction: rtl;
@@ -491,7 +501,7 @@ hr {
     .aboutContainer p {
       margin: 0 0 5vw 0; } }
 .projBack {
-  background-image: url("../img/proj/header2.jpg");
+  background-image: url("../img/bg/progects.jpg");
   background-size: cover;
   width: 100%;
   height: 60vh;
@@ -641,7 +651,7 @@ hr {
   text-align: center; }
 
 .backContact {
-  background: url(../img/proj/header2.jpg) no-repeat center center fixed;
+  background: url(../img/bg/contact.jpg) no-repeat center center fixed;
   overflow: auto;
   margin: auto;
   position: absolute;
@@ -868,5 +878,15 @@ hr {
         font-weight: lighter;
         font-size: 1.5em;
         line-height: 0; }
+
+.techsBack {
+  background-image: url("../img/bg/techs.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  top: 0;
+  z-index: 0;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 /*# sourceMappingURL=main.css.map */

@@ -66,7 +66,7 @@ angular.module('myApp.contact', ['ngRoute'])
                         if (data.responseText !== '') {
                             $(formMessages).text(data.responseText);
                         } else {
-                            $(formMessages).text('???????, ??? ???? ????? ?? ????.');
+                            $(formMessages).text('צר לנו אך עקב תקלה הודעתך לא נשלחה');
                         }
                     });
 

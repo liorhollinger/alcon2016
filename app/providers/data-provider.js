@@ -33,7 +33,7 @@ angular.module('myApp')
                 developer: 'קבוצת עזריאלי',
                 architects: 'משה צור אדריכלים',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
-            },{
+            }, {
                 id: 'amot',
                 name: 'מגדל אמות אטריום',
                 developer: 'אמות השקעות בע"מ',
@@ -108,7 +108,7 @@ angular.module('myApp')
                 name: 'מתחם עזריאלי חולון',
                 developer: 'קבוצת עזריאלי',
                 architects: 'אדריכל דוד עזריאלי, משהה צור אדריכלים, דוד עזריאלי אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg']
             },
             {
                 id: 'petahTikvaTower',
@@ -129,7 +129,7 @@ angular.module('myApp')
                 name: 'יס פלאנט',
                 developer: 'תיאטראות ישראל',
                 architects: 'יסקי מור סיון אדריכלים',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg','15.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg']
             },
             {
                 id: 'cityGate',
@@ -157,7 +157,7 @@ angular.module('myApp')
                 name: 'מגדלי התאומים',
                 developer: 'מגדלי התאומים בע"מ מגדלי עסקים(אחזקות)בע"מ',
                 architects: 'יסקי מור סיון אדריכלים',
-                imgs: ['1.jpg','2.jpg']
+                imgs: ['1.jpg', '2.jpg']
             },
             {
                 id: 'mercury',
@@ -181,6 +181,13 @@ angular.module('myApp')
                 imgs: ['1.jpg', '2.jpg', '3.jpg']
             },
             {
+                id: 'azrieliOrYehuda',
+                name: 'טרמינל סנטר - אור יהודה',
+                developer: 'אלה השקעות',
+                architects: 'משה קירשון אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+            },
+            {
                 id: 'azrieliAkko',
                 name: 'עזריאלי עכו כדור',
                 developer: 'קבוצת עזריאלי',
@@ -193,6 +200,13 @@ angular.module('myApp')
                 developer: 'קבוצת עזריאלי',
                 architects: 'אד\' דוד עזריאלי, יגאל צמיר, יעל אוקו אדריכלים',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
+            },
+            {
+                id: 'azrieliRamla',
+                name: 'עזריאלי רמלה - כדור זכוכית',
+                developer: 'קנית השקעות',
+                architects: 'אד\' דוד עזריאלי, יגאל צמיר, יעל אוקו אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
             }
 
         ];
@@ -201,12 +215,12 @@ angular.module('myApp')
         var techs = [
             {
                 id: 1,
-                name: 'alc10000',
+                name: 'ALC10000',
                 imgs: [$sce.trustAsResourceUrl('https://www.youtube.com/embed/5paSQnG3fPY?modestbranding=1&autohide=1&showinfo=0'), 'R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
                 pdf: '10000C.pdf'
-            },{
+            }, {
                 id: 2,
-                name: 'alc500',
+                name: 'ALC500',
                 imgs: ['alc_500_alum_0000_S.jpg',
                     'alc_500_alum_0001_S.jpg',
                     'alc_500_blue_wood_0000_S.jpg',
@@ -228,15 +242,15 @@ angular.module('myApp')
                     'ikea_02.jpg'],
                 pdf: 'alc_500.pdf'
             },
-            //{
-            //    id: 3,
-            //    name: 'alc1170',
-            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-            //    pdf: 'alc_1170.pdf'
-            //},
+            {
+                id: 3,
+                name: 'ALC1170',
+                imgs: ['1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG'],
+                pdf: 'alc_1170.pdf'
+            },
             {
                 id: 4,
-                name: 'alc4000',
+                name: 'ALC4000',
                 imgs: ['ar_reg.jpg',
                     'b_reg.jpg',
                     'e_reg.jpg',
@@ -251,23 +265,31 @@ angular.module('myApp')
                     'office2.jpg',
                     'office3.JPG'],
                 pdf: 'alc4000.pdf'
-            }
-            //{
-            //    id: 5,
-            //    name: 'alc9200',
-            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-            //    pdf: 'ALC_9200.pdf'
-            //},{
-            //    id: 6,
-            //    name: 'alc9000',
-            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-            //    pdf: 'ALC_9000.pdf'
-            //},{
+            },
+            {
+                id: 5,
+                name: 'ALC9200',
+                imgs: ['1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG', '7.JPG'],
+                pdf: 'ALC_9200.pdf'
+            },
+            {
+                id: 6,
+                name: 'ALC9000',
+                imgs: ['1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG', '7.JPG', '8.JPG', '9.JPG'],
+                pdf: 'ALC_9000.pdf'
+            },
+            // {
             //    id: 7,
             //    name: 'alc7000',
             //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
             //    pdf: 'ALC_7000.pdf'
             //}
+            {
+                id: 8,
+                name: 'ALC9900',
+                imgs: ['1.JPG', '2.JPG', '3.JPG'],
+                pdf: 'ALC_7000.pdf'
+            }
         ];
 
 
