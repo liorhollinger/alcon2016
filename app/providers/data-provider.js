@@ -181,6 +181,13 @@ angular.module('myApp')
                 imgs: ['1.jpg', '2.jpg', '3.jpg']
             },
             {
+                id: 'azrieliModin',
+                name: 'קניון עזריאלי מודיעין',
+                developer: 'קבוצת עזריאלי',
+                architects: 'ישר אדריכלים',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+            },
+            {
                 id: 'azrieliOrYehuda',
                 name: 'טרמינל סנטר - אור יהודה',
                 developer: 'אלה השקעות',
@@ -205,7 +212,7 @@ angular.module('myApp')
                 id: 'azrieliRamla',
                 name: 'עזריאלי רמלה - כדור זכוכית',
                 developer: 'קנית השקעות',
-                architects: 'אד\' דוד עזריאלי, יגאל צמיר, יעל אוקו אדריכלים',
+                architects: 'משה ספדיה אדריכלים בע"מ',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
             }
 
@@ -278,17 +285,23 @@ angular.module('myApp')
                 imgs: ['1.JPG', '2.JPG', '3.JPG', '4.JPG', '5.JPG', '6.JPG', '7.JPG', '8.JPG', '9.JPG'],
                 pdf: 'ALC_9000.pdf'
             },
-            // {
-            //    id: 7,
-            //    name: 'alc7000',
-            //    imgs: ['R_fragment.jpg', 's_fragment.jpg', 's_fragment_33cm.JPG', 's_wall.jpg', 'z_fragment.jpg'],
-            //    pdf: 'ALC_7000.pdf'
-            //}
+            {
+                id: 7,
+                name: 'ALC7000',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg'],
+                pdf: 'ALC_7000.pdf'
+            },
             {
                 id: 8,
                 name: 'ALC9900',
                 imgs: ['1.JPG', '2.JPG', '3.JPG'],
-                pdf: 'ALC_7000.pdf'
+                pdf: ''
+            },
+            {
+                id: 9,
+                name: 'ALC8000',
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg'],
+                pdf: ''
             }
         ];
 

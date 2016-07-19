@@ -13,7 +13,7 @@
 </div>
 <div class="proj-details">
     <h1>{{vm.tech.name}}</h1>
-    <p>
+    <p ng-if="vm.tech.pdf != '' ">
         <a href="pdfs/{{vm.tech.pdf}}" download>להורדת קטלוג</a>
     </p>
 </div>
