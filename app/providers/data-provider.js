@@ -294,7 +294,7 @@ angular.module('myApp')
             {
                 id: 8,
                 name: 'ALC9900',
-                imgs: ['1.JPG', '2.JPG', '3.JPG'],
+                imgs: ['1.jpg', '2.jpg', '3.jpg'],
                 pdf: ''
             },
             {
