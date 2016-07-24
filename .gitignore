@@ -12,3 +12,4 @@ npm-debug.log
 css.map
 dist/
 app/templates.js
+prod/

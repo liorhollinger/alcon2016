@@ -4,15 +4,20 @@ const clean = require('gulp-clean');
 const jshint = require('gulp-jshint');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-//const imagemin = require('gulp-imagemin');
+const imagemin = require('gulp-imagemin');
 const server = require('gulp-server-livereload');
 const sass = require('gulp-sass');
 const templateCache = require('gulp-angular-templatecache');
+const argv = require('yargs').argv;
 
 const bases = {
     app: 'app/',
     dist: 'dist/'
 };
+
+if (argv.env == 'PROD') {
+    bases.dist = 'prod/';
+}
 
 const paths = {
     scripts: ['**/*.js', '!**/*_test.js', '!bower_components/**/*.js'],
@@ -149,7 +154,7 @@ gulp.task('sass:watch', function () {
 //angularTemplates
 
 // Define the default task as a sequence of the above tasks
-gulp.task('prod', ['clean', 'libScripts', 'scripts', 'cssLibs','angularTpls', 'copy']);
+gulp.task('build:prod', ['clean', 'libScripts', 'scripts', 'cssLibs','angularTpls', 'imagemin', 'copy']);
 
 gulp.task('dev', ['angularTpls_dev', 'html:watch']);
 gulp.task('html:watch', function () {
