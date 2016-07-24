@@ -17,7 +17,7 @@
 
         //TODO:change from & recipient
 
-        $recipient = "liorhollinger@gmail.com";
+        $recipient = "alcon@alcon.co.il";
 
         $subject = "New contact from $name";
 

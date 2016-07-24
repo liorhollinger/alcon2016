@@ -385,20 +385,21 @@ iframe.video {
     align-items: center;
     justify-content: space-around;
     color: #D62439;
-    padding: 2em;
+    padding: 5em;
     padding-top: 0;
-    font-family: NextExit; }
+    font-family: NextExit;
+    line-height: 300%; }
     .statsCon .stats article {
       text-align: center;
       font-weight: 800; }
-      .statsCon .stats article div:first-child {
-        font-size: 5em;
-        line-height: 100%; }
-      .statsCon .stats article div:nth-child(2) {
+      .statsCon .stats article .lp {
+        font-size: 5em; }
+      .statsCon .stats article .sp {
         font-size: 1.8em; }
     .statsCon .stats .separator {
-      font-size: 13em;
-      font-weight: -100; }
+      font-size: 15em;
+      font-weight: -100;
+      padding-bottom: 20px; }
 
 @media (max-width: 1000px) {
   .info {
