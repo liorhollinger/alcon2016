@@ -97,11 +97,11 @@ gulp.task('angularTpls_dev', function () {
 gulp.task('imagemin', ['clean'], function() {
     gulp.src(paths.images, {cwd: bases.app})
         .pipe(imagemin())
-        .pipe(gulp.dest(bases.dist + 'images/'));
+        .pipe(gulp.dest(bases.dist + 'img/'));
 });
 
 // Copy all other files to dist directly
-gulp.task('copy', ['clean'], function() {
+gulp.task('copy', [], function() {
     // Copy html
     gulp.src(paths.html, {cwd: bases.app})
         .pipe(gulp.dest(bases.dist));
