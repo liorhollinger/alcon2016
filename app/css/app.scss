@@ -1,8 +1,8 @@
 
 html, body {
   width: 100%;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -22,20 +22,24 @@ body {
     text-decoration: none;
   }
 }
-.main{
+
+.main {
+  //direction: rtl;
+  //background: red;
   //min-height: 100vh;
-//width: 80%;
+  //width: 80%;
   //min-height: 400px;
   //margin-bottom: 200px;
   //clear: both;
 }
+
 //
 //section {
 //  padding: 10px 30px;
 //}
 
-@media (max-width: 1000px){
-  .main{
+@media (max-width: 1000px) {
+  .main {
     //min-height: 100vh;
     //margin-bottom: 200px;
 
@@ -43,9 +47,39 @@ body {
   }
 }
 
-
 .wrap-player {
-  height:100%;
-  width:100%;
-  overflow:hidden;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.rtl {
+  direction: rtl;
+  .inputsR {
+padding-left: 2em;
+    padding-right: 0;
+    input{
+      padding-right: 5px;
+    }
+  }
+  textarea{
+    padding-right: 5px;
+  }
+}
+
+.ltr {
+  direction: ltr;
+  .inputsL {
+    padding-right: 2em;
+    padding-left: 0;
+    @media (max-width: 728px) {
+      padding-right: 0;
+    }
+    input{
+      padding-left: 5px;
+    }
+  }
+  textarea{
+    padding-left: 5px;
+  }
 }

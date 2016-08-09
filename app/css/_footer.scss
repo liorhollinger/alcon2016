@@ -1,4 +1,5 @@
 footer {
+  direction: rtl;
   display: flex;
   flex-flow: row;
   //position: absolute;
@@ -48,7 +49,7 @@ footer {
           //position: absolute;
 
           &.google {
-            background-image: url("../img/home/G+.png");
+            background-image: url("../img/home/google.png");
           }
           &.linkedIn {
             background-image: url("../img/home/in.png");

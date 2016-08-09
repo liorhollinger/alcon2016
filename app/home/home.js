@@ -9,7 +9,7 @@ angular.module('myApp.home', ['ngRoute'])
         });
     }])
 
-    .controller('homeCtrl', ["DataFactory", function (DataFactory) {
+    .controller('homeCtrl', ["DataFactory","$rootScope", function (DataFactory,$rootScope) {
         document.body.scrollTop = document.documentElement.scrollTop = 0;
         this.userPlayed = function () {
             this.userPlay = true;
@@ -21,7 +21,6 @@ angular.module('myApp.home', ['ngRoute'])
         }
         // array of 3 array in item
         this.projs = _.chunk(DataFactory.getProjs(), howManySlides);
-
 
     }]).directive('videoContainer', [function () {
         return {
@@ -44,3 +43,4 @@ angular.module('myApp.home', ['ngRoute'])
             }
         }
     }]);
+

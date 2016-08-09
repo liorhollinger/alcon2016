@@ -32,6 +32,29 @@ body {
   width: 100%;
   overflow: hidden; }
 
+.rtl {
+  direction: rtl; }
+  .rtl .inputsR {
+    padding-left: 2em;
+    padding-right: 0; }
+    .rtl .inputsR input {
+      padding-right: 5px; }
+  .rtl textarea {
+    padding-right: 5px; }
+
+.ltr {
+  direction: ltr; }
+  .ltr .inputsL {
+    padding-right: 2em;
+    padding-left: 0; }
+    @media (max-width: 728px) {
+      .ltr .inputsL {
+        padding-right: 0; } }
+    .ltr .inputsL input {
+      padding-left: 5px; }
+  .ltr textarea {
+    padding-left: 5px; }
+
 .menuCon {
   direction: ltr;
   display: flex;
@@ -39,6 +62,7 @@ body {
   justify-content: space-between;
   z-index: 2; }
   .menuCon .contLeft {
+    direction: rtl;
     width: 84%;
     position: absolute;
     display: flex;
@@ -123,6 +147,7 @@ body {
   .nav-wrapper .logo {
     left: -160px !important; } }
 .nav-wrapper {
+  direction: rtl;
   display: flex;
   position: absolute;
   flex-direction: row-reverse;
@@ -157,7 +182,8 @@ body {
           .nav-wrapper .menu-wrapper .menu ul li:hover, .nav-wrapper .menu-wrapper .menu ul li.active {
             border-top-color: #fff; }
           .nav-wrapper .menu-wrapper .menu ul li:last-child {
-            padding-left: 20px; }
+            padding-left: 20px;
+            cursor: pointer; }
             .nav-wrapper .menu-wrapper .menu ul li:last-child span {
               font-size: 0.8em; }
           .nav-wrapper .menu-wrapper .menu ul li a {
@@ -250,6 +276,7 @@ body {
       left: -15px; }
 
 footer {
+  direction: rtl;
   display: flex;
   flex-flow: row;
   padding-top: 2.5vw;
@@ -285,7 +312,7 @@ footer {
           padding: 2px;
           background-size: cover; }
           footer .address div .iconsContainer a.google {
-            background-image: url("../img/home/G+.png"); }
+            background-image: url("../img/home/google.png"); }
           footer .address div .iconsContainer a.linkedIn {
             background-image: url("../img/home/in.png"); }
           footer .address div .iconsContainer a.facebook {
@@ -355,6 +382,8 @@ iframe.video {
     .info .homeName .companyName {
       display: flex;
       flex-flow: row nowrap; }
+    .info .homeName b {
+      line-height: 80%; }
   .info .bullets {
     font-family: NextExit;
     font-size: 17px;
@@ -393,7 +422,8 @@ iframe.video {
       text-align: center;
       font-weight: 800; }
       .statsCon .stats article .lp {
-        font-size: 5em; }
+        font-size: 5em;
+        line-height: 85%; }
       .statsCon .stats article .sp {
         font-size: 1.8em; }
     .statsCon .stats .separator {
@@ -460,7 +490,6 @@ iframe.video {
   background-repeat: no-repeat; }
 
 .aboutContainer {
-  direction: rtl;
   display: flex;
   flex-direction: column;
   padding: 4vw 15vw 1vw 15vw;
@@ -775,8 +804,7 @@ hr {
         justify-content: space-between;
         -webkit-justify-content: space-between;
         width: 300px;
-        height: 100%;
-        padding-left: 2em; }
+        height: 100%; }
         @media (max-width: 728px) {
           .contactCon .formCon .fields .flex-form .form-inputs {
             width: auto;
@@ -838,7 +866,8 @@ hr {
       .contactCon .formCon .fields .flex-form .description-field :-moz-placeholder {
         /* Firefox 18- */
         color: white; }
-    .contactCon .formCon .fields .sendButtonCon {
+    .contactCon .formCon .fields .sendButtonConR {
+      direction: rtl;
       display: flex;
       display: -webkit-box;
       /* OLD - iOS 6-, Safari 3.1-6 */
@@ -852,10 +881,10 @@ hr {
       padding-top: 3px;
       padding-bottom: 3px; }
       @media (max-width: 728px) {
-        .contactCon .formCon .fields .sendButtonCon {
+        .contactCon .formCon .fields .sendButtonConR {
           padding-left: 10px;
           width: 100vw; } }
-      .contactCon .formCon .fields .sendButtonCon .tri {
+      .contactCon .formCon .fields .sendButtonConR .tri {
         width: 2em;
         background-color: #d52635;
         -ms-transform: skewX(-35deg);
@@ -867,7 +896,7 @@ hr {
         position: relative;
         z-index: 0;
         right: 25px; }
-      .contactCon .formCon .fields .sendButtonCon input {
+      .contactCon .formCon .fields .sendButtonConR input {
         position: relative;
         z-index: 2;
         left: 26px;
@@ -879,6 +908,49 @@ hr {
         font-weight: lighter;
         font-size: 1.5em;
         line-height: 0; }
+    .contactCon .formCon .fields .sendButtonConL {
+      direction: ltr;
+      display: flex;
+      display: -webkit-box;
+      /* OLD - iOS 6-, Safari 3.1-6 */
+      display: -moz-box;
+      /* OLD - Firefox 19- (buggy but mostly works) */
+      display: -ms-flexbox;
+      /* TWEENER - IE 10 */
+      display: -webkit-flex;
+      justify-content: flex-end;
+      -webkit-justify-content: flex-end;
+      padding-top: 3px;
+      padding-bottom: 3px; }
+      @media (max-width: 728px) {
+        .contactCon .formCon .fields .sendButtonConL {
+          padding-right: 10px;
+          width: 100vw; } }
+      .contactCon .formCon .fields .sendButtonConL .tri {
+        width: 2em;
+        background-color: #d52635;
+        -ms-transform: skewX(35deg);
+        /* IE 9 */
+        -webkit-transform: skewX(35deg);
+        /* Safari */
+        transform: skewX(35deg);
+        /* Standard syntax */
+        position: relative;
+        z-index: 0;
+        right: -43px; }
+      .contactCon .formCon .fields .sendButtonConL input {
+        position: relative;
+        z-index: 2;
+        left: -20px;
+        background-color: #d52635;
+        border: none;
+        color: white;
+        height: 23px;
+        font-family: NextExit;
+        font-weight: lighter;
+        font-size: 1.5em;
+        line-height: 0;
+        padding-left: 10px; }
 
 .techsBack {
   background-image: url("../img/bg/techs.jpg");

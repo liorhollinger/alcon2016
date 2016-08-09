@@ -6,6 +6,7 @@
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "devDependencies": {
+    "angular-translate": "^2.11.1",
     "bower": "^1.7.7",
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",

@@ -44,20 +44,20 @@
 
 <div ng-view class="main"></div>
 
+
 <footer>
-    <div class="companyName">אלומיניום <br/>
-        קונסטרקשיין
+    <div class="companyName">{{'COMPANY_NAME1' | translate}}<br/>
+        {{'COMPANY_NAME2' | translate}}
     </div>
-    <div class="desc">אלומיניום קונסטרקשיין היא חברה מובילה בתחום תכנון, ייצור ובנייה של מעטפות מורכבות למגדלי
-        משרדים ומבני ציבור. החברה שייכת לקבוצת אלומיניום קונסטרקשיין שנוסדה בשנת 1991 . החברה
-        בונה מגוון רחב של פרויקטים, בנייני משרדים ומבנים ציבוריים בארץ ובעולם. הפיתוחים הטכנולוגיים
-        של החברה ומוצריה הציבו סטנדרטים חדשים של איכות וחדשנות בענף קירות המסך בעולם.
+    <div class="desc">
+        {{'DESC' | translate}}
     </div>
     <div class="address">
-        אופירה 8 א.ת. מישור אדומים 9851106<br/>
+        {{'ADDRESS' | translate}}
+        <br/>
         alcon@alcon.co.il <br/>
-        טל: <a href="tel:02-5352581">02-5352581</a>&nbsp;|&nbsp;
-        פקס:<span> 02-5354008 </span>
+        {{'TEL' | translate}}<a href="tel:972-2-5352581">{{'TEL_N' | translate}}</a>&nbsp;|&nbsp;
+        {{'FAX' | translate}}<span> {{'FAX_N' | translate}}</span>
 
         <div>
             <!--<img src="img/home/sm.JPG">-->
@@ -91,6 +91,8 @@
 <script src="about/about.js"></script>
 <script src="contact/contact.js"></script>
 <script src="techs/techs.js"></script>
+<script src="bower_components/angular-translate/angular-translate.js"></script>
+<script src="providers/transmodule.js"></script>
 <script src="components/version/version.js"></script>
 <script src="components/version/version-directive.js"></script>
 <script src="components/version/interpolate-filter.js"></script>
@@ -99,7 +101,7 @@
 <script src="components/alcon-swiper/alcon-swiper.directive.js"></script>
 
 <!--<script src="https://code.jquery.com/jquery-2.2.4.min.js"-->
-        <!--integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
+<!--integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>-->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

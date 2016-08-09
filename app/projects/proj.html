@@ -34,20 +34,24 @@
     </ks-swiper-slide>
     </ks-swiper-container>
 </div>
-<div class="proj-details">
-    <h1>
-        <span><strong>{{vm.proj.name}}</strong></span>&nbsp;|&nbsp;
-        <span>יזם: {{vm.proj.developer}}</span>&nbsp;|&nbsp;
-        <span>אדריכל: {{vm.proj.architects}}</span>
-    </h1>
+<div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
+    <div class="proj-details">
+        <h1>
+            <span><strong>{{vm.proj.name | translate}}</strong></span>&nbsp;|&nbsp;
+            <span>{{'Developer' | translate}} {{vm.proj.developer | translate}}</span>&nbsp;|&nbsp;
+            <span>{{'Architect' | translate}} {{vm.proj.architects | translate}}</span>
+        </h1>
+    </div>
 </div>
+
+
 
 
     <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0" pagination-clickable="true">
         <ks-swiper-slide class="swiper-slide" ng-repeat="projs in vm.projs2">
             <section class="projectsPage">
                 <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
-                    <div class="projectName">{{proj.name}}</div>
+                    <div class="projectName">{{proj.name | translate}}</div>
                 </a>
             </section>
         </ks-swiper-slide>

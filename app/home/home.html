@@ -4,34 +4,34 @@
         allowfullscreen class="video" ng-if="vm.userPlay"></iframe>
 
 <div class="videoBg" ng-if="!vm.userPlay" ng-click="vm.userPlayed()"></div>
-<!--<video-container></video-container>-->
 
-<div class="info">
-    <div class="homeName">
-        <div class="companyName">
-            <div> אלומיניום</div>
-            <div>&nbsp</div>
-            <div>קונסטרקשיין</div>
+<div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
+
+    <div class="info">
+        <div class="homeName">
+            <div class="companyName">
+                <div>{{'COMPANY_NAME1' | translate}}</div>
+                <div>&nbsp</div>
+                <div>{{'COMPANY_NAME2' | translate}}</div>
+            </div>
+            <br/>
+
+            <div><b>{{'FOR_EVERY_POSSIBLE' | translate}}</b></div>
         </div>
-        <br/>
-
-        <div><b>מכל הסיבות </b></div>
+        <div class="bullets">
+            <ul>
+                <li><span>{{'REASON1' | translate}}</span></li>
+                <li><span>{{'REASON2' | translate}}</span></li>
+                <li><span>{{'REASON3' | translate}}</span></li>
+                <li><span>{{'REASON4' | translate}}</span></li>
+                <li><span>{{'REASON5' | translate}}</span></li>
+                <li><span>{{'REASON6' | translate}}</span></li>
+            </ul>
+        </div>
     </div>
-    <div class="bullets">
-        <ul>
-
-            <li><span>	קירות המסך שלנו מתוכננים, מיוצרים ומותקנים עבורכם באמצעות הטכנולוגיות המתקדמות בעולם</span>
-            </li>
-            <li><span>	אנחנו אתכם משלב תכנון הבניין, דרך הביצוע ועד לשלב התחזוקה</span></li>
-            <li><span>	אנחנו מתכננים מייצרים ומתקינים קירות מסך מעל 30 שנה בהתאמה אישית</span></li>
-            <li><span>	אנחנו לא מתפשרים על איכות המוצר, הגימור והשירות </span></li>
-            <li><span>	המוצרים שלנו עומדים בתקנים ישראלים, אירופאים ואמריקאים</span></li>
-            <li><span>	אנחנו מאמינים במוצרים שלנו ולכן אתם מקבלים אחריות לכל החיים</span></li>
-
-        </ul>
-    </div>
-
 </div>
+
+
 
 
     <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0"
@@ -40,58 +40,43 @@
             <section class="projectsPage">
                 <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs"
                    ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
-
-                    <div class="projectName">{{proj.name}}</div>
-
-
+                    <div class="projectName">{{proj.name | translate}}</div>
                 </a>
 
-                <!--<div  class="projectThumbs">-->
-
-
-                <!--<a ng-repeat="proj in vm.projs" ng-href="#!/project/{{proj.id}}"  class="projectThumb" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}" >-->
-
-                <!--<div class="projectName">{{proj.name}}</div>-->
-                <!--</a>-->
-
-                <!--</div>-->
-
-                <!--&lt;!&ndash;<pre hidden>&ndash;&gt;-->
-                <!--&lt;!&ndash;{{vm.projs | json}}&ndash;&gt;-->
-                <!--&lt;!&ndash;</pre>&ndash;&gt;-->
 
             </section>
         </ks-swiper-slide>
     </ks-swiper-container>
 
 
+<div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
+
 <div class="statsCon">
     <section class="stats">
         <article>
             <p class="sp">&nbsp;</p>
             <p class="lp">1991</p>
-            <p class="sp">שנת הקמה</p>
+            <p class="sp">{{'YEAR_ESTABLISHED' | translate}}</p>
         </article>
         <div class="separator">/</div>
         <article>
-            <p class="sp">מעל</p>
-            <p class="lp">1,000,000 מ"ר
-
-            </p>
-            <p class="sp">קירות מסך</p>
+            <p class="sp">{{'OVER' | translate}}</p>
+            <p class="lp">1,000,000 {{'M2' | translate}} </p>
+            <p class="sp">{{'CURTAIN_WALLS' | translate}}</p>
         </article>
         <div class="separator">/</div>
         <article>
-            <p class="sp">מעל</p>
+            <p class="sp">{{'OVER' | translate}}</p>
             <p class="lp">600</p>
-            <p class="sp">פרוייקטים<p>
+            <p class="sp">{{'PROJECTS' | translate}}<p>
         </article>
         <div class="separator">/</div>
         <article>
             <p class="sp">&nbsp;</p>
             <p class="lp">100%</p>
-            <p class="sp">הצלחה</p>
+            <p class="sp">{{'SUCCESS' | translate}}</p>
         </article>
 
     </section>
+</div>
 </div>

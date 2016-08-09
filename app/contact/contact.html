@@ -7,50 +7,60 @@
     <div class="message-success" id="form-messages">
     </div>
     <!--<div id="form-messages"></div>-->
+
     <div class="formCon">
         <div class="alconDec">
-            <div>
-                <h1>אלומיניום קונסטרקשיין</h1>
+            <div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
+                <div>
+                    <h1>{{'COMPANY_NAME1' | translate}} {{'COMPANY_NAME2' | translate}}</h1>
 
-                <p>
-                    רחוב אופירה 8, אזור תעשייה מישור אדומים. מיקוד: 98100, ישראל
-                </p>
+                    <p>
+                        {{'ADDRESS2' | translate}}
+                    </p>
 
-                <p>
-                    טלפון: 02-5352581
-                </p>
+                    <p>
+                        {{'TEL' | translate}} {{'TEL_N' | translate}}
+                    </p>
 
-                <p>
-                    פקס: 02-5354008
-                </p>
+                    <p>
+                        {{'FAX' | translate}} {{'FAX_N' | translate}}
+                    </p>
 
-                <p>
-                    דוא"ל: alcon@alcon.co.il
-                </p>
+                    <p>
+                        {{'EMAIL' | translate}} alcon@alcon.co.il
+                    </p>
+                </div>
             </div>
+
         </div>
         <div class="fields">
+
             <form id="ajax-contact" method="post" action="server/mailer.php">
-                <div class="flex-form">
-                    <div class="form-inputs">
-                        <input type="text" autofocus style="display: none"/>
-                        <input type="tel" name="tel" id="tel"  required placeholder="טלפון" />
-                        <input type="text" name="name" id="name" required placeholder="שם"/>
-                        <input type="email" name="email" id="email" required pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})"
-                               placeholder='דוא"ל'/>
-                    </div>
-                    <div class="description-field">
-                        <textarea name="message" id="message" required cols="30" rows="5" placeholder="הודעה"></textarea>
+                <div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
+                    <div class="flex-form"  >
+                        <div class="form-inputs" ng-class="{ 'inputsR': langKey === 'heb', 'inputsL':langKey === 'en' }">
+                            <input type="text" autofocus style="display: none"/>
+                            <input type="tel" name="tel" id="tel" required placeholder="{{'TEL' | translate}}"/>
+                            <input type="text" name="name" id="name" required placeholder="{{'NAME' | translate}}"/>
+                            <input type="email" name="email" id="email" required pattern="([\w-\.]+@([\w-]+\.)+[\w-]{2,4})"
+                                   placeholder="{{'EMAIL' | translate}}"/>
+                        </div>
+                        <div class="description-field">
+                        <textarea name="message" id="message" required cols="30" rows="5"
+                                  placeholder="{{'MESSAGE' | translate}}"></textarea>
+                        </div>
                     </div>
                 </div>
-                <div class="sendButtonCon">
+                <div ng-class="{ 'sendButtonConR': langKey === 'heb', 'sendButtonConL':langKey === 'en' }">
                     <div class="tri"></div>
-                    <input type="submit"  value="שלח" >
+                    <input type="submit" value="{{'SEND' | translate }}">
                 </div>
             </form>
         </div>
     </div>
 </div>
+
+
 
 
 <!--<div class="container">-->

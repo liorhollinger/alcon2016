@@ -15,11 +15,11 @@
                 <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
                     <ul class="nav navbar-nav">
                         <!--<li><a href="#!/home">דף הבית</a></li>-->
-                        <li><a href="#!/about" data-toggle="collapse" data-target=".navbar-collapse">אודות</a></li>
-                        <li><a href="#!/techs" data-toggle="collapse" data-target=".navbar-collapse">טכנולוגיה</a></li>
-                        <li><a href="#!/projects" data-toggle="collapse" data-target=".navbar-collapse">פרויקטים</a></li>
-                        <li><a href="#!/contact" data-toggle="collapse" data-target=".navbar-collapse">צור קשר</a></li>
-                        <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse">א&nbsp;&nbsp;&nbsp;A</a></li>
+                        <li><a href="#!/about" data-toggle="collapse" data-target=".navbar-collapse">{{'ABOUT0' | translate}}</a></li>
+                        <li><a href="#!/techs" data-toggle="collapse" data-target=".navbar-collapse">{{'TECHNOLOGY' | translate}}</a></li>
+                        <li><a href="#!/projects" data-toggle="collapse" data-target=".navbar-collapse">{{'PROJECTS' | translate}}</a></li>
+                        <li><a href="#!/contact" data-toggle="collapse" data-target=".navbar-collapse">{{'CONTACT' | translate}}</a></li>
+                        <li ng-click="changeLanguage()"><a  data-toggle="collapse" data-target=".navbar-collapse"><p>א&nbsp;&nbsp;&nbsp;<span>A</span></p></a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
@@ -31,11 +31,11 @@
         <div class="menu">
             <ul>
                 <!--<li><a href="#!/home">דף הבית</a></li>-->
-                <li ng-class="{active: isActive('about')}"><a href="#!/about">אודות</a></li>
-                <li ng-class="{active: isActive('tech')}"><a href="#!/techs">טכנולוגיה</a></li>
-                <li ng-class="{active: isActive('project')}"><a href="#!/projects">פרויקטים</a></li>
-                <li ng-class="{active: isActive('contact')}"><a href="#!/contact">צור קשר</a></li>
-                <li><a href="#"><p>א&nbsp;&nbsp;&nbsp;<span>A</span></p></a></li>
+                <li ng-class="{active: isActive('about')}"><a href="#!/about">{{'ABOUT0' | translate}}</a></li>
+                <li ng-class="{active: isActive('tech')}"><a href="#!/techs">{{'TECHNOLOGY' | translate}}</a></li>
+                <li ng-class="{active: isActive('project')}"><a href="#!/projects">{{'PROJECTS' | translate}}</a></li>
+                <li ng-class="{active: isActive('contact')}"><a href="#!/contact">{{'CONTACT' | translate}}</a></li>
+                <li ng-click="changeLanguage()"><a><p>א&nbsp;&nbsp;&nbsp;<span>A</span></p></a></li>
             </ul>
         </div>
 

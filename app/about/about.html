@@ -1,80 +1,59 @@
 <div class="aboutBack"></div>
 
-<div class="aboutContainer">
-    <h2>אודות החברה</h2>
-    <div>
-        <p>
-            <span>אלומיניום קונסטרקשיין</span>
+<div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
 
-            היא חברה מובילה בתחום תכנון, ייצור והתקנה של מעטפות מורכבות למגדלי משרדים ומבני ציבור. החברה שייכת לקבוצת
-            "אלומיניום קונסטרקשיין" שמפתחת, מתכננת, מייצרת ומבצעת מוצרים בתחומי הזכוכית והאלומיניום לשימושים רבים
-            כגון: מגדלי מגורים, סקיילייט, קירות כבלים ופלדה. הקבוצה נוסדה בשנת 1991 על ידי מר רמי בונה, נשיא הקבוצה.
-        </p>
+    <div class="aboutContainer">
+        <h2>{{'ABOUT' | translate}}</h2>
 
+        <div>
+            <p>
+                <span>{{'COMPANY_NAME1' | translate}} {{'COMPANY_NAME2' | translate}}</span>
+                {{'ABOUT1' | translate}}
+            </p>
+
+        </div>
+        <div>
+            <p>
+                <span>{{'COMPANY_NAME1' | translate}} {{'COMPANY_NAME2' | translate}}</span>
+                {{'ABOUT2' | translate}}
+            </p>
+        </div>
+        <div>
+            <p>
+                <span>{{'COMPANY_NAME1' | translate}} {{'COMPANY_NAME2' | translate}}</span>
+                {{'ABOUT3' | translate}}
+            </p>
+        </div>
     </div>
-    <div>
-        <p>
-            <span>אלומיניום קונסטרקשיין</span>
 
-            פועלת בענף קירות המסך ומתמחה בביצוע פרויקטים במבנים בסקטור הציבורי ובנייני משרדים ברחבי הארץ ובעולם. החברה
-            שמה דגש רב על הלקוח, צרכיו ושביעות רצונו. מוצרי החברה מתקדמים וידידותיים לסביבה.
-        </p>
-    </div>
-    <div>
-        <p>
-            <span>אלומיניום קונסטרקשיין</span>
+    <hr>
 
-            לא מתפשרת על האיכות ומוצריה עומדים בתקנים ישראלים, אירופאים ואמריקאים. מוצרי החברה נבדקים במעבדת הקבוצה
-            הנחשבת לאחת משלוש המעבדות המובילות בעולם. הפיתוחים הטכנולוגיים של החברה ומוצריה הציבו סטנדרטים חדשים של
-            איכות וחדשנות בענף קירות המסך בעולם.
-        </p>
+    <div class="aboutContainer bottomContainer">
+
+        <h2>{{'COMPANY_VALUES' | translate}}</h2>
+
+        <div>
+            <p>
+                <span class="values">{{'VAL_KEY1' | translate}}</span>
+                {{'VALUE1' | translate}}
+            </p>
+        </div>
+        <div>
+            <p>
+                <span class="values">{{'VAL_KEY2' | translate}}</span>
+                {{'VALUE2' | translate}}
+            </p>
+        </div>
+        <div>
+            <p>
+                <span class="values">{{'VAL_KEY3' | translate}}</span>
+                {{'VALUE3' | translate}}
+            </p>
+        </div>
     </div>
+
 </div>
 
-<hr>
 
-<div class="aboutContainer bottomContainer">
 
-    <h2>ערכי החברה</h2>
-    <div>
-        <p>
-            <span class="values">חדשנות</span>
 
-            אנחנו מתחדשים כל הזמן. הניסיון והידע המקצועי שלנו מאפשר לנו לספק לכם פתרונות ולפתח טכנולוגיות ומוצרים מתקדמים.
-            המוצרים שלנו חדשניים, חסכוניים וידידותיים לסביבה ולכן נחשבים לפורצי דרך ומובילים טכנולוגית את ענף קירות המסך בארץ ובעולם.
-        </p>
-    </div>
-    <div>
-        <p>
-            <span class="values">מקצועיות ושירות </span>
-
-            פועלת בענף קירות המסך ומתמחה בביצוע פרויקטים במבנים בסקטור הציבורי ובנייני משרדים ברחבי הארץ ובעולם. החברה
-            שמה דגש רב על הלקוח, צרכיו ושביעות רצונו. מוצרי החברה מתקדמים וידידותיים לסביבה.
-        </p>
-    </div>
-    <div>
-        <p>
-            <span class="values">איכות המוצר </span>
-
-            לא מתפשרת על האיכות ומוצריה עומדים בתקנים ישראלים, אירופאים ואמריקאים. מוצרי החברה נבדקים במעבדת הקבוצה
-            הנחשבת לאחת משלוש המעבדות המובילות בעולם. הפיתוחים הטכנולוגיים של החברה ומוצריה הציבו סטנדרטים חדשים של
-            איכות וחדשנות בענף קירות המסך בעולם.
-        </p>
-    </div>
-</div>
-
-<!--<hr>-->
-
-<!--<div class="staffContainer">-->
-    <!--<h2>צוות החברה</h2>-->
-
-    <!--<div ng-repeat="member in vm.staff">-->
-        <!--<div class="staffContainer">-->
-            <!--<div class="staffImg"><img ng-src="img/about/staff/{{member.id}}.jpg"></div>-->
-            <!--<article>-->
-                <!--<div class="staffName"><b>{{member.name}}</b></div>-->
-                <!--<div class="staffDsc">{{member.about}}</div>-->
-            <!--</article>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->

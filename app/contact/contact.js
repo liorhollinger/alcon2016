@@ -9,14 +9,24 @@ angular.module('myApp.contact', ['ngRoute'])
         });
     }])
 
-    .controller('ContactCtrl', [function () {
+    .controller('ContactCtrl', ['$rootScope',function ($rootScope) {
 
         if (window.innerWidth >= 700) {
             var elelist = document.getElementsByTagName("input");
             elelist[1].focus();
         }
 
+
         document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+        //if($rootScope.langKey === "en"){
+        //    document.querySelector(".form-inputs").style.paddingLeft =  "0";
+        //    document.querySelector(".form-inputs").style.paddingRight =  "2em";
+        //    console.log("sdfsdfsdf");
+        //}
+
+
+
 
         $(function () {
 

@@ -8,6 +8,7 @@
   z-index: 2;
 
   .contLeft {
+    direction: rtl;
     width: 84%;
     position: absolute;
     display: flex;
@@ -181,6 +182,7 @@
 
 $navHeight: 133px;
 .nav-wrapper {
+  direction: rtl;
   display: flex;
   position: absolute;
   flex-direction: row-reverse;
@@ -192,6 +194,7 @@ $navHeight: 133px;
   font-weight: lighter;
 
   .menu-wrapper {
+
     position: relative;
     width: 100%;
     height: $navHeight;
@@ -225,6 +228,7 @@ $navHeight: 133px;
 
           &:last-child {
             padding-left: 20px;
+            cursor: pointer;
             span{
               font-size: 0.8em;
             }
