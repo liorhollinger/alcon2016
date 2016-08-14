@@ -1,9 +1,11 @@
 <div class="projBack"></div>
-<section class="projectsPage">
-    <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in vm.projs" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
-        <div class="projectName">{{proj.name | translate}}</div>
-    </a>
-</section>
+<div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
+    <section class="projectsPage">
+        <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in vm.projs"
+           ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
+            <div class="projectName">{{proj.name | translate}}</div>
+        </a>
+    </section>
+</div>
 
-<div class="textContainer"></div>
 

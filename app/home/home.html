@@ -1,7 +1,15 @@
-<iframe width="100%" height="auto"
-        src="https://www.youtube.com/embed/9gM2uf8lLuw?modestbranding=1&autohide=1&showinfo=0&autoplay=1"
-        frameborder="0"
-        allowfullscreen class="video" ng-if="vm.userPlay"></iframe>
+<!--<iframe width="100%" height="auto"-->
+        <!--src="https://www.youtube.com/embed/9gM2uf8lLuw?modestbranding=1&autohide=1&showinfo=0&autoplay=1"-->
+        <!--frameborder="0"-->
+        <!--allowfullscreen class="video" ng-if="vm.userPlay">-->
+<!--</iframe>-->
+<div class="video-container" ng-if="vm.userPlay">
+    <video controls  id="videoPlayer">
+        <source src="video/ALC8000.mp4" type="video/mp4">
+        <source src="video/ALC8000.avi" type="video/avi">
+    </video>
+</div>
+
 
 <div class="videoBg" ng-if="!vm.userPlay" ng-click="vm.userPlayed()"></div>
 
@@ -32,51 +40,61 @@
 </div>
 
 
+<ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0"
+                     pagination-clickable="true">
+    <ks-swiper-slide class="swiper-slide" ng-repeat="projs in vm.projs">
+        <section class="projectsPage">
+            <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs"
+               ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
+                <div class="projectName">
+                    <div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">{{proj.name | translate}}</div>
+                </div>
+            </a>
 
 
-    <ks-swiper-container initial-slide="1" loop="true" show-nav-buttons="true" slides-per-view="1" space-between="0"
-                         pagination-clickable="true">
-        <ks-swiper-slide class="swiper-slide" ng-repeat="projs in vm.projs">
-            <section class="projectsPage">
-                <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs"
-                   ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
-                    <div class="projectName">{{proj.name | translate}}</div>
-                </a>
-
-
-            </section>
-        </ks-swiper-slide>
-    </ks-swiper-container>
+        </section>
+    </ks-swiper-slide>
+</ks-swiper-container>
 
 
 <div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">
 
-<div class="statsCon">
-    <section class="stats">
-        <article>
-            <p class="sp">&nbsp;</p>
-            <p class="lp">1991</p>
-            <p class="sp">{{'YEAR_ESTABLISHED' | translate}}</p>
-        </article>
-        <div class="separator">/</div>
-        <article>
-            <p class="sp">{{'OVER' | translate}}</p>
-            <p class="lp">1,000,000 {{'M2' | translate}} </p>
-            <p class="sp">{{'CURTAIN_WALLS' | translate}}</p>
-        </article>
-        <div class="separator">/</div>
-        <article>
-            <p class="sp">{{'OVER' | translate}}</p>
-            <p class="lp">600</p>
-            <p class="sp">{{'PROJECTS' | translate}}<p>
-        </article>
-        <div class="separator">/</div>
-        <article>
-            <p class="sp">&nbsp;</p>
-            <p class="lp">100%</p>
-            <p class="sp">{{'SUCCESS' | translate}}</p>
-        </article>
+    <div class="statsCon">
+        <section class="stats">
+            <article>
+                <p class="sp">&nbsp;</p>
 
-    </section>
-</div>
+                <p class="lp">1991</p>
+
+                <p class="sp">{{'YEAR_ESTABLISHED' | translate}}</p>
+            </article>
+            <div class="separator">/</div>
+            <article>
+                <p class="sp">{{'OVER' | translate}}</p>
+
+                <p class="lp">1,000,000 {{'M2' | translate}} </p>
+
+                <p class="sp">{{'CURTAIN_WALLS' | translate}}</p>
+            </article>
+            <div class="separator">/</div>
+            <article>
+                <p class="sp">{{'OVER' | translate}}</p>
+
+                <p class="lp">600</p>
+
+                <p class="sp">{{'PROJECTS' | translate}}
+
+                <p>
+            </article>
+            <div class="separator">/</div>
+            <article>
+                <p class="sp">&nbsp;</p>
+
+                <p class="lp">100%</p>
+
+                <p class="sp">{{'SUCCESS' | translate}}</p>
+            </article>
+
+        </section>
+    </div>
 </div>
