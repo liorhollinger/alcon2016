@@ -178,7 +178,7 @@ angular.module('myApp')
                 id: 'ashdar2000',
                 name: 'ashdar2000',
                 developer: 'AshtromGroupLtd',
-                architects: 'FintziShmuelRava:',
+                architects: 'FintziShmuelRava',
                 imgs: ['1.jpg', '2.jpg', '3.jpg']
             },
             {

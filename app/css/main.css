@@ -339,31 +339,18 @@ footer {
         footer > div.address div .iconsContainer {
           justify-content: center; } }
 .video-container {
-  width: 100%;
-  position: relative; }
-  @media (max-width: 320px) {
-    .video-container {
-      margin-top: 53px; } }
-  .video-container video {
-    width: 100%;
-    height: 56.25%; }
-  .video-container .video-controls {
-    position: absolute;
-    top: 40%;
-    left: 50%; }
-    @media (max-width: 320px) {
-      .video-container .video-controls {
-        left: 40%;
-        top: 25%; } }
-    .video-container .video-controls img {
-      width: 100px;
-      height: 100px; }
-
-iframe.video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
+  background-color: black;
   top: 0;
   z-index: 0; }
+  .video-container video {
+    width: 100vw;
+    height: 100vh;
+    padding-left: 10px; }
 
 .info {
   width: 100vw;

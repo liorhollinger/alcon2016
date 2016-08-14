@@ -44,7 +44,22 @@ angular.module('myApp', [
         };
 
 
-                //$rootScope.langKey;
+        //$rootScope.userPlayed = function () {
+        //    $rootScope.userPlay = true;
+        //    //$rootScope.videoPlayer = document.getElementById("videoPlayer");
+        //    //$rootScope.videoPlayer.onended = function() {
+        //    //    alert("The video has ended");
+        //    //};
+        //    $rootScope.videoPlayer = document.getElementById("videoPlayer");
+        //    setTimeout(function(){
+        //        //$rootScope.videoPlayer = document.getElementById("videoPlayer");
+        //        console.log($rootScope.videoPlayer);
+        //        $rootScope.videoPlayer.onended = function() {
+        //            alert("The video has ended");
+        //        };
+        //    },10)
+        //
+        //};
 
 
 
