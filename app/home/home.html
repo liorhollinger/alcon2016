@@ -1,14 +1,17 @@
-<!--<iframe width="100%" height="auto"-->
-        <!--src="https://www.youtube.com/embed/9gM2uf8lLuw?modestbranding=1&autohide=1&showinfo=0&autoplay=1"-->
-        <!--frameborder="0"-->
-        <!--allowfullscreen class="video" ng-if="vm.userPlay">-->
-<!--</iframe>-->
-<div class="video-container" ng-if="vm.userPlay">
-    <video controls  id="videoPlayer">
-        <source src="video/ALC8000.mp4" type="video/mp4">
-        <source src="video/ALC8000.avi" type="video/avi">
-    </video>
+<div class="video-container"  ng-if="vm.userPlay">
+    <iframe width="100%" height="auto"
+            src="https://www.youtube.com/embed/7awB2nqJcVw?modestbranding=0&autohide=1&rel=0&showinfo=0&autoplay=1"
+            frameborder="0"
+            allowfullscreen class="video">
+    </iframe>
 </div>
+
+<!--<div class="video-container" ng-if="vm.userPlay">-->
+    <!--<video controls  id="videoPlayer">-->
+        <!--<source src="video/ALC8000.mp4" type="video/mp4">-->
+        <!--<source src="video/ALC8000.avi" type="video/avi">-->
+    <!--</video>-->
+<!--</div>-->
 
 
 <div class="videoBg" ng-if="!vm.userPlay" ng-click="vm.userPlayed()"></div>
