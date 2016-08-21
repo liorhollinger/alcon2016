@@ -51,7 +51,9 @@
         <ks-swiper-slide class="swiper-slide" ng-repeat="projs in vm.projs2">
             <section class="projectsPage">
                 <a ng-href="#!/project/{{proj.id}}" ng-repeat="proj in projs" ng-style="{'background-image':'url(img/proj/'+proj.id+'/1.jpg)'}">
-                    <div class="projectName">{{proj.name | translate}}</div>
+                    <div class="projectName">
+                        <div ng-class="{ 'rtl': langKey === 'heb', 'ltr':langKey === 'en' }">{{proj.name | translate}}</div>
+                    </div>
                 </a>
             </section>
         </ks-swiper-slide>

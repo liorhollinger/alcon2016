@@ -508,6 +508,8 @@ footer {
     font-weight: bold;
     font-size: 1em;
     letter-spacing: 0.05vw; }
+    .aboutContainer span.values {
+      font-size: 1.2em; }
   .aboutContainer p {
     margin: 0 0 3vw 0; }
 

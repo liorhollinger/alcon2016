@@ -33,7 +33,7 @@ angular.module('myApp')
                 name: 'SARONA',
                 developer: 'Azrieli_co',
                 architects: 'DavidAzrieleArchMosheTzurArch',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg']
             }, {
                 id: 'amot',
                 name: 'AMOT',
@@ -45,7 +45,7 @@ angular.module('myApp')
                 id: 'platinumTower',
                 name: 'PLATINUMTOWER',
                 developer: 'AmotInvestmentsLtd',
-                architects: 'Lea Rubanenko Arch.',
+                architects: 'LeaRubanenkoArch',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg', '12.jpg', '13.jpg', '14.jpg', '15.jpg', '16.jpg', '17.jpg', '18.jpg', '19.jpg', '20.jpg', '21.jpg', '22.jpg']
             },
             {
@@ -66,7 +66,7 @@ angular.module('myApp')
                 id: 'discountTower',
                 name: 'discountTower',
                 developer: 'LevinsteinCo',
-                architects: 'MooreYaskySivanArch',
+                architects: 'MooreYaskySivanArchRazielArch',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
             },
             {
@@ -109,14 +109,14 @@ angular.module('myApp')
                 name: 'azrieliCenterHolon',
                 developer: 'Azrieli_co',
                 architects: 'DavidAzrieleArchMosheTzurArch',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
             },
             {
                 id: 'petahTikvaTower',
                 name: 'petahTikvaTower',
                 developer: 'MigdalInsuranceLtd',
                 architects: 'GabaiArch',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg', '11.jpg']
             },
             {
                 id: 'tamarPark',
@@ -150,7 +150,7 @@ angular.module('myApp')
                 id: 'sapTower',
                 name: 'sapTower',
                 developer: 'SAP',
-                architects: 'RubinArch:',
+                architects: 'RubinArch',
                 imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
             },
             {
@@ -186,14 +186,14 @@ angular.module('myApp')
                 name: 'azrieliModin',
                 developer: 'Azrieli_co',
                 architects: 'SafadieArchitects',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg', '9.jpg', '10.jpg']
             },
             {
                 id: 'azrieliOrYehuda',
                 name: 'azrieliOrYehuda',
                 developer: 'EllaGroupInvestmentsLtd',
                 architects: 'MosheKirshon',
-                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.jpg']
+                imgs: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg']
             },
             {
                 id: 'azrieliAkko',
